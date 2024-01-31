@@ -13,7 +13,7 @@
         </div>
 
         <h6>
-          Développeur web et mobile, UI/UX, brand & motion designer de 16 ans, passionné d’informatique en général. Je transmet cette passion à travers de nombreux projets en ligne et dans la vie.
+          Développeur web et mobile, UI/UX, brand & motion designer de 16 ans, passionné d’informatique en général. Je transmets cette passion à travers de nombreux projets en ligne et dans la vie.
         </h6>
 
         <div class="me_contact">

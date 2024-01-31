@@ -44,6 +44,54 @@
     </Card>
 
     <Card>
+      <h3>Projets fictifs</h3>
+      <h6>
+        Ces projets “fictifs” me permettent d’explorer des domaines tels que l’UI/UX et le design graphique à travers des exemples populaires et répandus.
+      </h6>
+      <hr />
+
+      <Project
+        image="/images/prj-sncf.svg"
+        title="SNCF Connect"
+        type="Design UI/UX"
+        date="décembre 2023"
+        description="Redesign fictif de l’application de réservation de billet de train de la SNCF"
+        role="Designer UI/UX"
+        color="#0089AB"
+        href="projects/sncf"
+      />
+    </Card>
+
+    <Card>
+      <h3>Motion design - Vidéos YouTube</h3>
+      <h6>
+        Les projets d’exploration de motion design utilisent des produits, marques ou services inventés de toute pièce afin de pouvoir en créer le produit.
+      </h6>
+      <hr />
+
+      <Project
+        image="/images/prj-wos10.png"
+        title="Meet whileOS 10"
+        type="Motion design / 3D"
+        date="juin 2023"
+        description="Vidéo en motion design 3D pour présenter un system d’exploitation fictif"
+        role="Motion designer + UI/UX designer"
+        color="#329DFD"
+        href="https://www.youtube.com/watch?v=q8icEtyhXzA"
+      />
+      <Project
+        image="/images/prj-wp8.png"
+        title="Introducing whilePhone 8"
+        type="Motion design / 3D"
+        date="août 2022"
+        description="Courte vidéo publicitaire fictive en 3D pour un smartphone"
+        role="Motion designer + UI/UX designer"
+        color="#C74A8D"
+        href="https://www.youtube.com/watch?v=ipg83JS-Crg"
+      />
+    </Card>
+
+    <Card>
       <h3>Me contacter</h3>
       <h6>
         Besoin de me retrouver ? Retrouvez mes coordonnées ci-dessous

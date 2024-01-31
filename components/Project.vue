@@ -51,6 +51,8 @@
     width: 180px;
     border-radius: 10px;
     transition: all 0.1s ease-in-out;
+    aspect-ratio: 200/85;
+    height: 80px;
   }
 
   .project_content {
@@ -112,6 +114,7 @@
 
     .project_image {
       width: 200px;
+      height: 85px;
     }
 
     .project_content {
