@@ -1,19 +1,59 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "VL-Sentient";
+  font-style: italic;
+  font-weight: all;
+  src: url("/fonts/Sentient-MediumItalic.woff") format("woff");
+}
+
 :root {
   --background: #E1E7F0;
   --foreground: #26214D;
+  --primary: #0054DB;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --primary: var(--primary);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .vl-highlight {
+    background: linear-gradient(92deg, var(--primary) 49.91%, #5d9bff 99.93%);
+    color: #fff;
+    letter-spacing: -.1rem;
+    border-radius: 7px;
+    margin: 0 0.3rem;
+    line-height: 100%;
+    padding: 0.3rem 0.6rem;
+    font-family: 'VL-Sentient';
+    font-style: italic;
+    font-weight: 500 !important;
+    display: inline-block !important;
+    transform: rotate(-1deg) scale(1.07) translateY(-2px) !important;
+  }
+
+  .vl-light {
+    background: rgba(0, 84, 219, 0.16);
+    color: var(--primary);
+  }
+
+  a {
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+    text-underline-offset: 3px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
 }
