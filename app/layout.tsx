@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={geist.className + ' antialiased text-foreground bg-background'}>
+      <body className={geist.className + ' antialiased text-foreground bg-background overflow-x-hidden'}>
+        <div className="gradient-bg"></div>
+
         {children}
       </body>
     </html>

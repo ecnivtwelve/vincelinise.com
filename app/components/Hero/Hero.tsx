@@ -7,7 +7,7 @@ export default function Hero() {
 
       <User />
 
-      <h1 className="text-3xl md:text-[2.5rem] tracking-[-0.01em] md:leading-[2.9rem] text-center">
+      <h1 className="text-3xl md:text-[2.5rem] tracking-[-0.01em] leading-[2.5rem] md:leading-[2.9rem] text-center mt-[-10px]">
         Enchanté, moi c&apos;est <span className="vl-highlight">Vince Linise</span> ,<br />
         étudiant <span className="vl-highlight vl-light">MMI</span> & développeur
       </h1>

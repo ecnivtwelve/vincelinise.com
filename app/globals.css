@@ -57,3 +57,13 @@ body {
     text-decoration: underline;
   }
 }
+
+.gradient-bg {
+  background: linear-gradient(180deg, #91B3E9 0%, #CFDAEE 51.92%, #E1E7F0 100%);
+  position: fixed;
+  z-index: -999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}

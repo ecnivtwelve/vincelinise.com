@@ -7,10 +7,9 @@ import Icons from "./Icons";
 
 export default function User() {
   return (
-    <div className="items-center justify-center flex flex-col">
-
-      <div className="absolute icons-mask">
-        <Icons />
+    <div className="items-center justify-center flex flex-col relative w-full overflow-visible">
+      <div className="absolute icons-mask left-1/2 -translate-x-1/2 pointer-events-none">
+        <Icons className="hero-icons max-w-none" />
       </div>
 
       <motion.div
