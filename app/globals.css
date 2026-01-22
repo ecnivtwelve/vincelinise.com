@@ -37,8 +37,9 @@ body {
     font-family: 'VL-Sentient';
     font-style: italic;
     font-weight: 500 !important;
+    leading-trim: both;
+    text-edge: cap;
     display: inline-block !important;
-    transform: rotate(-1deg) scale(1.07) translateY(-2px) !important;
   }
 
   .vl-light {
@@ -46,14 +47,14 @@ body {
     color: var(--primary);
   }
 
-  a {
+  .link {
     color: var(--primary) !important;
     font-weight: 600 !important;
     text-decoration: none;
     text-underline-offset: 3px;
   }
 
-  a:hover {
+  .link:hover {
     text-decoration: underline;
   }
 }
@@ -64,6 +65,6 @@ body {
   z-index: -999;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 50%;
 }
