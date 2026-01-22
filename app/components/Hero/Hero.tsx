@@ -50,7 +50,8 @@ export default function Hero() {
           transition={{ ...transition, delay: 0.35 }}
           className="hidden md:block"
         >
-          <Button variant="outlined" leading={<GridIcon />}>Projets</Button>
+          <Button variant="outlined" leading={<GridIcon />}
+            href="/projects">Projets</Button>
         </motion.div>
 
         <motion.div
@@ -58,7 +59,10 @@ export default function Hero() {
           animate={finalAnimation}
           transition={{ ...transition, delay: 0.3 }}
         >
-          <Button leading={<NewspaperIcon />}>Voir mon CV</Button>
+          <Button leading={<NewspaperIcon />}
+            href="/assets/cv_vince_linise.pdf"
+            target="_blank"
+          >Voir mon CV</Button>
         </motion.div>
 
         <motion.div

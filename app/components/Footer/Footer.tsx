@@ -7,7 +7,7 @@ import MailIcon from "../Icons/Mail";
 import VinceLiniseSVG from "./VinceLinise";
 
 interface FooterProps {
-  backgroundColor: string;
+  backgroundColor?: string;
 }
 
 export default function Footer({ backgroundColor = "var(--background)" }: FooterProps) {
@@ -21,7 +21,7 @@ export default function Footer({ backgroundColor = "var(--background)" }: Footer
           <p className="font-medium">contact@vincelinise.com</p>
         </a>
 
-        <a href="#" className="flex gap-3 items-center hover:text-[#A3C7FF]">
+        <a href="/assets/cv_vince_linise.pdf" target="_blank" className="flex gap-3 items-center hover:text-[#A3C7FF]">
           <ArchiveIcon />
           <p className="font-medium">Télécharger mon CV</p>
         </a>
