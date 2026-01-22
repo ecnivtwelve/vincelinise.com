@@ -8,7 +8,7 @@ import VinceLiniseSVG from "./VinceLinise";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#26214D] text-white mh-12 min-w-0  w-full max-w-4xl rounded-2xl lg:rounded-3xl p-20 gap-10 flex flex-col overflow-hidden">
+    <footer className="w-full bg-[#26214D] text-white mh-12 min-w-0  w-full max-w-4xl rounded-2xl lg:rounded-3xl p-10 lg:p-20 gap-10 flex flex-col overflow-hidden">
       <p className="text-white text-4xl lg:text-5xl font-light">Besoin d’échanger autour d’un café ou d’un <span className="text-[#A3C7FF]">kouign-amann</span> ?</p>
 
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 max-w-160">
