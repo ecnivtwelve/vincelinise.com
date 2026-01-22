@@ -1,0 +1,73 @@
+---
+project: "Compose ton Logo"
+title: "Dispositif interactif pour la journée portes ouvertes"
+description: "Borne interactive permettant de s'initier à la création graphique développée en React.js"
+date: "2026-01-21"
+tags: ["Projet scolaire", "Développement Web", "Design UI/UX"]
+image: "/projects/ctl-banner.jpg"
+logo: "/projects/ctl-logo.svg"
+icon: "/icon-ctl.png"
+accentColor: "#99566E"
+backgroundColor: "#ffedf4"
+paperColor: "#ffffff"
+---
+
+Dans le cadre de mes études, j'ai été amené à développer un dispositif interactif en binôme pour la journée portes ouvertes de l'IUT de Lannion. L'objectif étant de permettre aux visiteurs de découvrir la formation MMI ainsi que les disciplines enseignées à l'intérieur de celle-ci.
+
+## Le dispositif
+
+Compose ton Logo est un moyen simple de s'essayer à la création graphique. À l'aide d'une borne, les visiteurs pourront créer leur logo en utilisant des contrôles simplifiés inspirés des logiciels tels que Figma ou Illustrator.
+
+Il a été créé en groupe avec [Roxane Omnes](https://www.instagram.com/artheia._/), qui s'est occupée des recherches UX et de la conception de l'habillage.
+
+<img src="/projects/ctl-schema.png" className="max-w-156 w-full min-w-0" alt="" />
+
+<sup>Schema du dispositif extraît des recherches UX du 12 novembre 2025</sup>
+
+## L'interface
+À l'aide de [React.js](https://react.dev/), [Tailwind.css](https://tailwindcss.com/), [Electron Vite](https://electron-vite.org/) et [Framer Motion](https://motion.dev/), j'ai développé une interface interactive à partir des designs issus des recherches UX.
+
+Grâce au développement du projet, j'ai pu apprendre de nombreuses choses, notamment sur le développement d'interfaces de bornes (style kiosques) et sur le développement d'animations avancées pour des interfaces dynamiques.
+
+<video playsInline src="/projects/ctl-demo.webm" className="rounded-xl border border-neutral-300 shadow-lg" controls></video>
+
+<sup>Démonstration du dispositif en version du 21 janvier 2026</sup>
+
+## Un univers immersif et ludique
+
+Afin de rendre l'expérience mémorable pour les lycéens, le dispositif ne se limite pas à une simple interface logicielle. Nous avons mis en place un univers immersif comprenant un habillage physique complet de la borne tactile, des animations et un sound design intégré. L'installation physique se compose de :
+- Une table tactile Ilyama 55" sur pied mobile, pilotée par un ordinateur fixe.
+- Un habillage personnalisé constitué de trois bâches imprimées (faces avant, gauche et droite) fixées par velcro.
+- Une projection murale située à 1 mètre de la table, affichant une fresque dynamique des logos créés par les précédents visiteurs.
+
+<img src="/projects/ctl-build.jpg" className="w-full min-w-0 rounded-xl border border-neutral-400 shadow-lg" alt="" />
+
+<sup>Impression de la bâche d'habillage</sup>
+
+## Une identité visuelle
+
+Pour mettre en avant le projet, une identité visuelle inspirée des styles rétro à été mise en place, avec un motion design mélant 2D et 3D utilisé comme intro.
+
+<video playsInline src="/projects/ctl-intro.webm" className="rounded-xl border border-neutral-300 shadow-lg" controls></video>
+
+<sup>Extrait de la vidéo de présentation</sup>
+
+## Le parcours utilisateur
+L'expérience a été pensée pour être intuitive et accessible. Le cheminement se décompose en trois étapes clés :
+- Arrivée : Un écran de veille invite l'utilisateur à "Créer mon logo" tandis que le projecteur affiche la galerie de créations existantes.
+- Composition : L'utilisateur saisit son texte (protégé par un module de censure) puis progresse via des onglets pour personnaliser les formes et les couleurs.
+- Finalisation : Une fois la création terminée, le visiteur peut choisir de recevoir son logo par e-mail au format .png ou de l'envoyer vers le vidéoprojecteur pour l'ajouter à la galerie collective.
+
+## L'expérience installateur
+Pour permettre au dispositif d'être réutilisable, une documentation détaillée a été produite pour permettre à l'installateur de mettre en place le dispositif.
+
+<div className="flex flex-row gap-2">
+  <img src="/projects/ctl-install-1.jpg" className="w-full min-w-0 rounded-lg border border-neutral-300 shadow-lg" alt="" />
+  <img src="/projects/ctl-install-2.jpg" className="w-full min-w-0 rounded-lg border border-neutral-300 shadow-lg" alt="" />
+  <img src="/projects/ctl-install-3.jpg" className="w-full min-w-0 rounded-lg border border-neutral-300 shadow-lg" alt="" />
+</div>
+
+<sup>Extraits de la documentation installateur</sup>
+
+## Conclusion
+Le projet s'est conclu par la livraison d'un dispositif fonctionnel et cohérent, parfaitement fidèle aux attentes du client pour la JPO du 7 mars 2026. Grâce à la complémentarité de nos compétences en design graphique et développement web, nous avons réussi à transformer une idée abstraite en une expérience physique immersive, ludique et intuitive.

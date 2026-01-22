@@ -6,7 +6,11 @@ import LinkedInBlueIcon from "../Icons/LinkedinBlue";
 import MailIcon from "../Icons/Mail";
 import VinceLiniseSVG from "./VinceLinise";
 
-export default function Footer() {
+interface FooterProps {
+  backgroundColor: string;
+}
+
+export default function Footer({ backgroundColor = "var(--background)" }: FooterProps) {
   return (
     <footer className="w-full bg-[#26214D] text-white mh-12 min-w-0  w-full max-w-4xl rounded-2xl lg:rounded-3xl p-10 lg:p-20 gap-10 flex flex-col overflow-hidden">
       <p className="text-white text-4xl lg:text-5xl font-light">Besoin d’échanger autour d’un café ou d’un <span className="text-[#A3C7FF]">kouign-amann</span> ?</p>
@@ -37,7 +41,7 @@ export default function Footer() {
 
       <div className="w-full flex justify-center -mb-30">
         <div className="w-[1136px]">
-          <VinceLiniseSVG fill="var(--background)" />
+          <VinceLiniseSVG fill={backgroundColor} />
         </div>
       </div>
     </footer>

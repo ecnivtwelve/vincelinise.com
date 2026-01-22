@@ -34,7 +34,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full mt-2 mb-12 flex-col flex gap-8 px-6 lg:px-0">
+    <div className="w-full mt-2 mb-12 flex-col flex gap-8 px-4 lg:px-0">
       <h2 className="text-4xl lg:text-5xl font-light">Compétences techniques</h2>
 
       <div className="w-full flex gap-2 flex-col lg:flex-row">
@@ -48,8 +48,8 @@ const Skills = () => {
           >
             <Image src={skill.icon} alt={skill.title} width={48} height={48} />
             <div className="lg:mt-3 gap-1 flex flex-col items-start lg:items-center">
-              <p className="text-center text-lg font-semibold leading-6">{skill.title}</p>
-              <p className="font-sm text-center opacity-60">{skill.type}</p>
+              <p className="lg:text-center text-lg font-semibold leading-6">{skill.title}</p>
+              <p className="font-sm lg:text-center opacity-60">{skill.type}</p>
             </div>
           </motion.div>
         ))}

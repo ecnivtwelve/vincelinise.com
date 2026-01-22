@@ -24,6 +24,7 @@ const Projects = () => {
           title="Alternative open-source aux applications scolaires"
           type="Projet perso"
           info="Développement et design UI/UX"
+          href="/projects/papillon"
         />
       </motion.div>
       <motion.div
@@ -39,6 +40,7 @@ const Projects = () => {
           title="Dispositif interactif pour la journée portes ouvertes"
           type="Projet MMI"
           info="Développement React"
+          href="/projects/compose-ton-logo"
         />
       </motion.div>
       <motion.div
