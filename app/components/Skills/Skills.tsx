@@ -34,7 +34,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full mt-24 flex-col flex gap-8 px-6 lg:px-0">
+    <div className="w-full mt-2 mb-12 flex-col flex gap-8 px-6 lg:px-0">
       <h2 className="text-4xl lg:text-5xl font-light">Compétences techniques</h2>
 
       <div className="w-full flex gap-2 flex-col lg:flex-row">

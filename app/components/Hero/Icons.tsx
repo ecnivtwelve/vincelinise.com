@@ -1,15 +1,44 @@
 'use client';
-import * as React from "react";
+import React, { useMemo } from "react";
 import { motion } from "motion/react";
 
 const PapiconsHomeG = (props) => {
-  const delay = Math.random()
+  const [delay] = React.useState(() => Math.random())
+  const [randomX] = React.useState(() => (Math.random() - 0.5) * 30)
+  const [randomY] = React.useState(() => (Math.random() - 0.5) * 30)
+  const [randomRotate] = React.useState(() => (Math.random() - 0.5) * 20)
+  const [randomDuration] = React.useState(() => 4 + Math.random() * 6)
 
   return (
     <motion.g
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
-      transition={{ duration: 1.2, type: "spring", bounce: 0.5, delay }}
+      initial={{ scale: 0, x: 0, y: 0, rotate: 0 }}
+      whileInView={{
+        scale: 1,
+        x: [0, randomX, 0],
+        y: [0, randomY, 0],
+        rotate: [0, randomRotate, 0],
+      }}
+      transition={{
+        scale: { duration: 1.2, type: "spring", bounce: 0.5, delay },
+        x: {
+          duration: randomDuration,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: delay + 1.2,
+        },
+        y: {
+          duration: randomDuration * 1.2,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: delay + 1.2,
+        },
+        rotate: {
+          duration: randomDuration * 1.5,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: delay + 1.2,
+        },
+      }}
       {...props}
     />
   )
