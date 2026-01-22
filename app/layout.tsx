@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import SmoothScroll from "./components/SmoothScroll";
 
 import { Geist } from 'next/font/google'
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={geist.className + ' antialiased text-foreground bg-background overflow-x-hidden'}>
         <div className="gradient-bg"></div>
 
+        <SmoothScroll />
         {children}
       </body>
     </html>
