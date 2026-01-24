@@ -38,7 +38,7 @@ const Navigation = () => {
 
       {nav.map((item) => (
         <Link key={item.title} href={item.href}
-          className={clsx("font-medium text-md px-4 lg:px-6 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all",
+          className={clsx("font-medium text-md px-4 lg:px-6 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
             currentPath === item.href || (item.href === "/projects" && browsingProjects) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60"
           )}
         >

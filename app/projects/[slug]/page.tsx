@@ -5,6 +5,7 @@ import { getProjectBySlug, getProjectSlugs } from "@/lib/projects";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Footer from "@/app/components/Footer/Footer";
 import Navigation from "@/app/components/Navigation/Navigation";
+import ProjectHeader from "@/app/components/Project/ProjectHeader";
 
 interface Props {
   params: Promise<{
@@ -57,23 +58,7 @@ export default async function ProjectPage({ params }: Props) {
       ></div>
 
       <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-hidden z-1" style={{ backgroundColor: paperColor }}>
-        <div className="relative w-full h-64 md:h-96">
-          <Image
-            src={image}
-            alt={""}
-            fill
-            className="w-full h-auto object-cover"
-          />
-        </div>
-
-        <div className="relative w-full h-24 md:h-36 -mt-16 drop-shadow-lg">
-          <Image
-            src={logo}
-            alt={title}
-            fill
-            className="w-full h-auto object-contain"
-          />
-        </div>
+        <ProjectHeader image={image} logo={logo} title={title} accentColor={accentColor} />
 
         <div className="flex flex-row w-full items-center justify-center gap-2 mt-6 flex-wrap">
           <span className="px-3 py-1.5 bg-neutral-200 border border-neutral-200 rounded-full text-sm font-semibold">
