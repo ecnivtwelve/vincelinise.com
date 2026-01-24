@@ -23,7 +23,7 @@ export default function User() {
       >
         <motion.div
           initial={{ y: 280 }}
-          animate={isLoaded ? { y: 0 } : { y: 280 }}
+          whileInView={isLoaded ? { y: 0 } : { y: 280 }}
           transition={{ duration: 0.8, delay: 0, type: "spring", bounce: 0.25 }}
           className="absolute top-[20px] transition-[top] hover:top-[10px] h-[120%] min-w-[155%] left-[-30%] z-1"
         >
