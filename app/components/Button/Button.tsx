@@ -1,7 +1,7 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react';
+import React, { AnchorHTMLAttributes, ReactNode } from 'react';
 import clsx from 'clsx';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLAnchorElement> {
+interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   variant?: 'primary' | 'outlined';
   leading?: ReactNode;
   children: ReactNode;

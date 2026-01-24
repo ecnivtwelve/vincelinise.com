@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "name": "Vince Linise"
+  },
+  "hero": {
+    "greeting": "Enchanté, moi c'est",
+    "name": "Vince Linise",
+    "role1": "designer",
+    "role2": "d'interfaces & développeur",
+    "description": "J'étudie actuellement en seconde année de BUT MMI (métiers du multimédia et de l'Internet) à l'IUT de Lannion (en Bretagne) et je développe des applications Web et mobile en parallèle. Je fais également de la conception d'interface et du motion design.",
+    "buttMMI": "BUT MMI",
+    "iutLannion": "IUT de Lannion",
+    "btnProjects": "Projets",
+    "btnCV": "Voir mon CV",
+    "btnLinkedIn": "LinkedIn",
+    "workingAt": "Je travaille actuellement chez"
+  },
+  "projects": {
+    "papillon": {
+      "name": "Papillon",
+      "title": "Alternative open-source aux applications scolaires",
+      "type": "Projet perso",
+      "info": "Développement et design UI/UX"
+    },
+    "composeTonLogo": {
+      "name": "Compose ton Logo",
+      "title": "Dispositif interactif pour la journée portes ouvertes",
+      "type": "Projet MMI",
+      "info": "Développement React"
+    },
+    "lePhare": {
+      "name": "Le Phare aux Spectacles",
+      "title": "Design UI/UX d'une application de spectacles",
+      "type": "Projet MMI",
+      "info": "Design d'interface utilisateur"
+    }
+  },
+  "skills": {
+    "title": "Compétences techniques",
+    "items": {
+      "react": {
+        "title": "React & React Native",
+        "type": "Développement front-end"
+      },
+      "svelte": {
+        "title": "Svelte & SvelteKit",
+        "type": "Développement front-end"
+      },
+      "figma": {
+        "title": "Figma",
+        "type": "Design d'expérience utilisateur"
+      },
+      "afterEffects": {
+        "title": "Adobe After Effects",
+        "type": "Animation et motion design"
+      },
+      "python": {
+        "title": "Python",
+        "type": "Développement back-end, serveur et algo"
+      }
+    }
+  },
+  "aboutMe": {
+    "title1": "À propos",
+    "title1Highlight": "de moi",
+    "description1": "Je m'appelle Vince Linise et j'ai 18 ans. Pour faire court, mon aventure a commencé le jour ou j'ai reçu mon premier ordinateur.",
+    "description1b": "Ce qui n'était qu'un cadeau est devenu une révélation : j'adore tout ce que cet outil me permet d'explorer, de créer et de vivre, et je souhaite en faire mon métier. C'est pour ça que j'ai fait le choix d'étudier en BUT MMI à l'IUT de Lannion.",
+    "picture1": "C'est moi, ça ! Pendant le tournage du dernier Papillon Event, un webinaire vidéo annuel présentant les nouveautés de mon application",
+    "title2": "Mes projets",
+    "title2Highlight": "et travaux",
+    "description2": "Passionné par l'open-source, je consacre une grande partie de mon énergie à l'association Papillon. En tant que président et développeur, je pilote depuis 4 ans une application mobile qui accompagne aujourd'hui des milliers d'étudiants dans leur quotidien.",
+    "description2b": "Côté technique, je jongle entre React, JavaScript, Figma et les double expresso (avec un sucre, de préférence) pour concevoir des expériences web et mobiles mémorables et agréables à utiliser.",
+    "picture2": "Bon, c'est clairement une mise en scène, mais ça illustre plutôt bien quand j'étais en train de bosser sur Papillon v8 pendant l'été 2025"
+  },
+  "map": {
+    "title": "Kenavo !",
+    "description": "Pour être honnête, je ne parle pas un mot de breton, et on m'a raconté que ça ne veut pas dire \"Bonjour\" mais \"au revoir\" (et c'est dommage, car ça serait sympa de se revoir sur mon LinkedIn).",
+    "description2": "Bref, je suis breton et je vis ici depuis ma naissance !",
+    "linkedIn": "LinkedIn",
+    "picture": "Ça fait un bout de chemin tous les week-ends !"
+  },
+  "formation": {
+    "title": "Ma formation",
+    "iutLannion": {
+      "year": "2024-2027",
+      "establishment": "IUT de Lannion",
+      "city": "Lannion (22)",
+      "title": "Métiers du Multimédia et de l'Internet",
+      "subtitle": "Bachelor Universitaire de Technologie",
+      "specificity": "spécialité Développement Web et disp. interactifs",
+      "description": "Une formation super-polyvalente ou j'apprends à piloter des projets multimédias de A à Z, de l'intégration technique au marketing numérique, avec l'objectif de décrocher mon diplôme en 2027."
+    },
+    "lycee": {
+      "year": "2021 — 2024",
+      "establishment": "Lycée Bertrand d'Argentré",
+      "city": "Vitré (35)",
+      "title": "Baccalauréat général",
+      "subtitle": "Enseignement secondaire",
+      "specificity": "spécialités Sciences informatiques et Anglais",
+      "description": "Obtention du baccalauréat général au lycée avec les spécialités Numérique & Sciences Informatiques, Anglais Monde Contemporain et Sciences économiques et sociales (que j'ai suivi en anglais)."
+    }
+  },
+  "experience": {
+    "title": "Expériences professionnelles",
+    "linagora": {
+      "title": "Alternant développeur front-end",
+      "company": "Linagora",
+      "location": "Issy-Les-Moulineaux (92)",
+      "date": "septembre 2025 à aujourd'hui",
+      "description": "Développeur Front-end en alternance sur la solution Twake Workplace, une alternative souveraine et open-source aux environnements de travail collaboratifs. Je contribue majoritairement au développement de l'interface utilisateur en React."
+    },
+    "papillon": {
+      "title": "Président",
+      "company": "Papillon",
+      "location": "Rennes (35)",
+      "date": "septembre 2021 à aujourd'hui",
+      "description": "Papillon est aujourd'hui l'application de vie scolaire open-source la plus téléchargée de France. Elle permet à plus de 1 500 000 élèves d'accéder à leurs données via une interface moderne, intuitive et entièrement personnalisable. En tant que président et développeur, j'ai placé l'expérience utilisateur au cœur de ce projet pour offrir aux étudiants un outil construit par eux et pour eux."
+    },
+    "strella": {
+      "title": "Développeur et UX designer",
+      "company": "StrellaStudio",
+      "location": "à distance de Dole (39)",
+      "date": "janvier 2024 à aujourd'hui",
+      "description": "Développeur et graphiste UI/UX pour les clients de l'association StrellaStudio, qui fournit des services numériques aux entreprises qui souhaitent se développer sur le Web."
+    },
+    "cozy": {
+      "title": "Développeur front-end",
+      "company": "Cozy Cloud",
+      "location": "à distance de Paris (75)",
+      "date": "Stage de juin 2024 à août 2024",
+      "description": "Développement et planification d'un client front-end et back-end d'aggrégation de données scolaires pour élèves du secondaire sur la plateforme de connecteurs de Cozy Cloud pour un déploiement auprès des académies."
+    }
+  },
+  "papillonSection": {
+    "title": "« Un jour, je déploierai mes aîles »...",
+    "subtitle": "...ou un truc comme ça, je sais plus",
+    "description": "Papillon, c'est mon plus gros projet depuis toujours. En résumé, c'est une appli ou les étudiants peuvent retrouver tout ce dont ils ont besoin pour bien étudier — et aujourd'hui, ils sont plus d'1 500 000 à l'avoir essayé !",
+    "button": "Voir papillon.bzh",
+    "picture": "Voici l'équipe avec laquelle je travaille sur Papillon ! (oui, on n'a qu'une photo tous ensemble)"
+  },
+  "softSkills": {
+    "title": "Soft-skills",
+    "leadership": {
+      "title": "Leadership et Esprit d'Initiative",
+      "description": "En tant que président de Papillon, j'ai appris à gérer une équipe et à mettre en commun différentes compétences pour mener à bien un projet dans le temps."
+    },
+    "autonomy": {
+      "title": "Autonomie et Curiosité",
+      "description": "Passionné, je m'intéresse et me forme continuellement aux dernières technologies. Je cherche à comprendre comment les choses fonctionnent et comment les améliorer."
+    },
+    "empathy": {
+      "title": "Empathie Utilisateur",
+      "description": "Mon approche du design est centrée sur l'humain. Je cherche avant tout à résoudre des problématiques identifiables avec une solution qui apporte une expérience agréable et intuitive."
+    },
+    "adaptation": {
+      "title": "Capacité d'Adaptation",
+      "description": "Jongler entre le code et le design, ou s'adapter à de nouveaux environnements de travail est naturel pour moi. Je pivote rapidement selon les enjeux, les projets et les équipes."
+    }
+  },
+  "footer": {
+    "title": "Besoin d'échanger autour d'un café ou d'un",
+    "titleHighlight": "kouign-amann",
+    "email": "contact@vincelinise.com",
+    "downloadCV": "Télécharger mon CV",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2026 Vince Linise — Tous droits réservés"
+  },
+  "projectPage": {
+    "notFound": "Projet non trouvé"
+  }
+}

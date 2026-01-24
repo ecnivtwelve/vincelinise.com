@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "name": "Vince Linise"
+  },
+  "hero": {
+    "greeting": "Nice to meet you, I'm",
+    "name": "Vince Linise",
+    "role1": "interface designer",
+    "role2": "& developer",
+    "description": "I'm currently in my second year of a Bachelor's in Multimedia and Internet (BUT MMI) at IUT de Lannion (in Brittany, France) and I develop Web and mobile applications in parallel. I also do interface design and motion design.",
+    "buttMMI": "BUT MMI",
+    "iutLannion": "IUT de Lannion",
+    "btnProjects": "Projects",
+    "btnCV": "View my Resume",
+    "btnLinkedIn": "LinkedIn",
+    "workingAt": "I currently work at"
+  },
+  "projects": {
+    "papillon": {
+      "name": "Papillon",
+      "title": "Open-source alternative to school apps",
+      "type": "Personal project",
+      "info": "Development and UI/UX design"
+    },
+    "composeTonLogo": {
+      "name": "Compose ton Logo",
+      "title": "Interactive device for open house day",
+      "type": "MMI Project",
+      "info": "React development"
+    },
+    "lePhare": {
+      "name": "Le Phare aux Spectacles",
+      "title": "UI/UX design for a shows application",
+      "type": "MMI Project",
+      "info": "User interface design"
+    }
+  },
+  "skills": {
+    "title": "Technical skills",
+    "items": {
+      "react": {
+        "title": "React & React Native",
+        "type": "Front-end development"
+      },
+      "svelte": {
+        "title": "Svelte & SvelteKit",
+        "type": "Front-end development"
+      },
+      "figma": {
+        "title": "Figma",
+        "type": "User experience design"
+      },
+      "afterEffects": {
+        "title": "Adobe After Effects",
+        "type": "Animation and motion design"
+      },
+      "python": {
+        "title": "Python",
+        "type": "Back-end, server and algorithms development"
+      }
+    }
+  },
+  "aboutMe": {
+    "title1": "About",
+    "title1Highlight": "me",
+    "description1": "My name is Vince Linise and I'm 18 years old. To keep it short, my journey began the day I received my first computer.",
+    "description1b": "What was just a gift became a revelation: I love everything this tool allows me to explore, create and experience, and I want to make it my career. That's why I chose to study BUT MMI at IUT de Lannion.",
+    "picture1": "That's me! During the filming of the latest Papillon Event, an annual video webinar presenting my application's new features",
+    "title2": "My projects",
+    "title2Highlight": "and work",
+    "description2": "Passionate about open-source, I dedicate a large part of my energy to the Papillon association. As president and developer, I've been leading a mobile application for 4 years that now accompanies thousands of students in their daily lives.",
+    "description2b": "On the technical side, I juggle between React, JavaScript, Figma and double espressos (with one sugar, preferably) to design memorable and pleasant web and mobile experiences.",
+    "picture2": "Okay, it's clearly staged, but it illustrates pretty well when I was working on Papillon v8 during the summer of 2025"
+  },
+  "map": {
+    "title": "Kenavo!",
+    "description": "To be honest, I don't speak a word of Breton, and I was told it doesn't mean \"Hello\" but \"goodbye\" (and that's a shame, because it would be nice to see each other again on my LinkedIn).",
+    "description2": "Anyway, I'm Breton and I've lived here since birth!",
+    "linkedIn": "LinkedIn",
+    "picture": "That's quite a journey every weekend!"
+  },
+  "formation": {
+    "title": "My education",
+    "iutLannion": {
+      "year": "2024-2027",
+      "establishment": "IUT de Lannion",
+      "city": "Lannion (22)",
+      "title": "Multimedia and Internet",
+      "subtitle": "Bachelor of Technology",
+      "specificity": "specialty Web Development and interactive devices",
+      "description": "A super-versatile training where I learn to manage multimedia projects from A to Z, from technical integration to digital marketing, with the goal of getting my degree in 2027."
+    },
+    "lycee": {
+      "year": "2021 — 2024",
+      "establishment": "Lycée Bertrand d'Argentré",
+      "city": "Vitré (35)",
+      "title": "General Baccalaureate",
+      "subtitle": "Secondary education",
+      "specificity": "specialties Computer Science and English",
+      "description": "Obtained the general baccalaureate at high school with specialties in Digital & Computer Science, Contemporary World English, and Economics and Social Sciences (which I followed in English)."
+    }
+  },
+  "experience": {
+    "title": "Professional experience",
+    "linagora": {
+      "title": "Front-end developer apprentice",
+      "company": "Linagora",
+      "location": "Issy-Les-Moulineaux (92)",
+      "date": "September 2025 to present",
+      "description": "Front-end developer apprentice on the Twake Workplace solution, a sovereign and open-source alternative to collaborative work environments. I mainly contribute to the development of the user interface in React."
+    },
+    "papillon": {
+      "title": "President",
+      "company": "Papillon",
+      "location": "Rennes (35)",
+      "date": "September 2021 to present",
+      "description": "Papillon is now France's most downloaded open-source school life application. It allows more than 1,500,000 students to access their data through a modern, intuitive and fully customizable interface. As president and developer, I placed the user experience at the heart of this project to offer students a tool built by them and for them."
+    },
+    "strella": {
+      "title": "Developer and UX designer",
+      "company": "StrellaStudio",
+      "location": "remotely from Dole (39)",
+      "date": "January 2024 to present",
+      "description": "Developer and UI/UX designer for StrellaStudio association clients, which provides digital services to companies looking to develop on the Web."
+    },
+    "cozy": {
+      "title": "Front-end developer",
+      "company": "Cozy Cloud",
+      "location": "remotely from Paris (75)",
+      "date": "Internship from June 2024 to August 2024",
+      "description": "Development and planning of a front-end and back-end client for aggregating school data for secondary students on the Cozy Cloud connector platform for deployment to academies."
+    }
+  },
+  "papillonSection": {
+    "title": "\"One day, I will spread my wings\"...",
+    "subtitle": "...or something like that, I don't remember",
+    "description": "Papillon is my biggest project ever. In short, it's an app where students can find everything they need to study well — and today, more than 1,500,000 of them have tried it!",
+    "button": "Visit papillon.bzh",
+    "picture": "Here's the team I work with on Papillon! (yes, we only have one photo together)"
+  },
+  "softSkills": {
+    "title": "Soft skills",
+    "leadership": {
+      "title": "Leadership and Initiative",
+      "description": "As president of Papillon, I learned to manage a team and combine different skills to successfully carry out a project over time."
+    },
+    "autonomy": {
+      "title": "Autonomy and Curiosity",
+      "description": "Passionate, I'm continually interested in and train myself on the latest technologies. I seek to understand how things work and how to improve them."
+    },
+    "empathy": {
+      "title": "User Empathy",
+      "description": "My design approach is human-centered. I primarily seek to solve identifiable problems with a solution that provides a pleasant and intuitive experience."
+    },
+    "adaptation": {
+      "title": "Adaptability",
+      "description": "Juggling between code and design, or adapting to new work environments is natural for me. I pivot quickly according to challenges, projects and teams."
+    }
+  },
+  "footer": {
+    "title": "Need to chat over coffee or a",
+    "titleHighlight": "kouign-amann",
+    "email": "contact@vincelinise.com",
+    "downloadCV": "Download my Resume",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "copyright": "© 2026 Vince Linise — All rights reserved"
+  },
+  "projectPage": {
+    "notFound": "Project not found"
+  }
+}

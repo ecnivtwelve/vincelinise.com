@@ -16,7 +16,7 @@ const ProjectCard = ({
   title: string;
   type: string;
   info: string;
-  href: string;
+  href?: string;
 }) => {
   return (
     <a href={href} className="card flex flex-row lg:flex-col  bg-white rounded-xl shadow-md w-full border border-neutral-300 hover:border-neutral-400 hover:shadow-lg hover:transform-[translateY(-5px)] transition-all active:scale-95">

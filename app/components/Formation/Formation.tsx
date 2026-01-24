@@ -1,35 +1,38 @@
+'use client';
+
 import React from "react";
 import FormationItem from "./FormationItem";
+import { useTranslations } from 'next-intl';
 
 const Formation = () => {
+  const t = useTranslations('formation');
+
   const formations = [
     {
       icon: "/form-iutlan.png",
-      year: "2024-2027",
-      establishment: "IUT de Lannion",
-      city: "Lannion (22)",
-      title: "Métiers du Multimédia et de l’Internet",
-      subtitle: "Bachelor Universitaire de Technologie",
-      specificity: "spécialité Développement Web et disp. interactifs",
-      description:
-        "Une formation super-polyvalente ou j’apprends à piloter des projets multimédias de A à Z, de l'intégration technique au marketing numérique, avec l'objectif de décrocher mon diplôme en 2027."
+      year: t('iutLannion.year'),
+      establishment: t('iutLannion.establishment'),
+      city: t('iutLannion.city'),
+      title: t('iutLannion.title'),
+      subtitle: t('iutLannion.subtitle'),
+      specificity: t('iutLannion.specificity'),
+      description: t('iutLannion.description')
     },
     {
       icon: "/form-lba.png",
-      year: "2021 — 2024",
-      establishment: "Lycée Bertrand d’Argentré",
-      city: "Vitré (35)",
-      title: "Baccalauréat général",
-      subtitle: "Enseignement secondaire",
-      specificity: "spécialités Sciences informatiques et Anglais",
-      description:
-        "Obtention du baccalauréat général au lycée avec les spécialités Numérique & Sciences Informatiques, Anglais Monde Contemporain et Sciences économiques et sociales (que j'ai suivi en anglais)."
+      year: t('lycee.year'),
+      establishment: t('lycee.establishment'),
+      city: t('lycee.city'),
+      title: t('lycee.title'),
+      subtitle: t('lycee.subtitle'),
+      specificity: t('lycee.specificity'),
+      description: t('lycee.description')
     },
   ];
 
   return (
     <div className="w-full pt-24 flex flex-col gap-10 px-4 md:px-6 lg:px-0">
-      <h2 className="text-4xl lg:text-5xl font-light">Ma formation</h2>
+      <h2 className="text-4xl lg:text-5xl font-light">{t('title')}</h2>
 
       <div className="flex flex-col md:flex-row gap-8 px-1">
         {formations.map((formation, index) => (

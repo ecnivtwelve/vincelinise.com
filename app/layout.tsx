@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
+import LocaleProvider from "./components/LocaleProvider";
 
 import { Geist } from 'next/font/google'
 
@@ -24,7 +25,9 @@ export default function RootLayout({
         <div className="gradient-bg"></div>
 
         <SmoothScroll />
-        {children}
+        <LocaleProvider>
+          {children}
+        </LocaleProvider>
       </body>
     </html>
   );

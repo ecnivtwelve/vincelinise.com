@@ -3,8 +3,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { motion } from "motion/react";
+import { useTranslations } from 'next-intl';
 
 const Projects = () => {
+  const t = useTranslations('projects');
+
   const initialAnimation = { scale: 0.9, opacity: 0, translateY: 40 }
   const finalAnimation = { scale: 1, opacity: 1, translateY: 0 }
   const transition = { type: 'spring', duration: 0.9, bounce: 0.5 }
@@ -20,10 +23,10 @@ const Projects = () => {
         <ProjectCard
           icon="/icon-papillon.png"
           banner="/banner-papillon.png"
-          name="Papillon"
-          title="Alternative open-source aux applications scolaires"
-          type="Projet perso"
-          info="Développement et design UI/UX"
+          name={t('papillon.name')}
+          title={t('papillon.title')}
+          type={t('papillon.type')}
+          info={t('papillon.info')}
           href="/projects/papillon"
         />
       </motion.div>
@@ -36,10 +39,10 @@ const Projects = () => {
         <ProjectCard
           icon="/icon-ctl.png"
           banner="/banner-ctl.png"
-          name="Compose ton Logo"
-          title="Dispositif interactif pour la journée portes ouvertes"
-          type="Projet MMI"
-          info="Développement React"
+          name={t('composeTonLogo.name')}
+          title={t('composeTonLogo.title')}
+          type={t('composeTonLogo.type')}
+          info={t('composeTonLogo.info')}
           href="/projects/compose-ton-logo"
         />
       </motion.div>

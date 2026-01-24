@@ -2,23 +2,26 @@
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import React from "react";
-import User from "../Hero/User";
 import Image from "next/image";
 import Link from "next/link";
 import LinkedInIcon from "../Icons/LinkedIn";
 import HomeIcon from "../Icons/Home";
 import PenIcon from "../Icons/Pen";
 import GitHubIcon from "../Icons/GitHub";
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 
 const Navigation = () => {
+  const t = useTranslations('nav');
+
   const nav = [
     {
-      title: "Accueil",
+      title: t('home'),
       href: "/",
       icon: HomeIcon
     },
     {
-      title: "Projets",
+      title: t('projects'),
       href: "/projects",
       icon: PenIcon
     }
@@ -32,7 +35,7 @@ const Navigation = () => {
       <div className="w-fit lg:w-56 flex items-center gap-2 p-1">
         <Link href="/" className="flex items-center gap-3">
           <Image src="/me.jpg" alt="" width={128} height={128} className="rounded-full min-w-9 w-9 aspect-square" />
-          <p className="font-semibold text-md hidden lg:block">Vince Linise</p>
+          <p className="font-semibold text-md hidden lg:block">{t('name')}</p>
         </Link>
       </div>
 
@@ -47,6 +50,8 @@ const Navigation = () => {
         </Link>
       ))}
 
+      <LanguageSwitcher />
+
       <div className="w-full lg:w-56 items-center justify-end gap-4 p-1 px-4 hidden md:flex">
         <a href="https://github.com/ecnivtwelve" target="_blank" className="opacity-60 hover:opacity-100 transition-all">
           <GitHubIcon className="w-6 h-6" />
@@ -60,3 +65,4 @@ const Navigation = () => {
 }
 
 export default Navigation
+
