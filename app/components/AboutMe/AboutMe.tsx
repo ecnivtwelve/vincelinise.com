@@ -12,7 +12,7 @@ const AboutMe = () => {
         <div className={textContainerClass}>
           <h2 className="text-3xl md:text-4xl font-semibold"><Highlight>À propos</Highlight> de moi</h2>
           <p className="opacity-80 text-md lg:text-lg">
-            Je m’appelle Vince Linise et j’ai 18 ans. Pour faire court, mon aventure a commencé le jour ou j’ai reçu mon premier ordinateur.<br />
+            Je m’appelle Vince Linise et j’ai 18 ans. Pour faire court, mon aventure a commencé le jour où j’ai reçu mon premier ordinateur.<br />
             <br />
             Ce qui n'était qu'un cadeau est devenu une révélation : j’adore tout ce que cet outil me permet d’explorer, de créer et de vivre, et je souhaite en faire mon métier. C’est pour ça que j’ai fait le choix d’étudier en BUT MMI à l'IUT de Lannion.
           </p>
