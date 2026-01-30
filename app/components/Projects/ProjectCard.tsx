@@ -29,7 +29,7 @@ const ProjectCard = ({
           <p className="font-semibold flex-1 truncate text-sm md:text-base">{name}</p>
           <p className="font-regular opacity-60 truncate max-w-[50%] text-sm md:text-base">{type}</p>
         </div>
-        <h3 className="font-semibold text-md md:text-[1.2rem] md:leading-[1.5rem]">{title}</h3>
+        <h2 className="font-semibold text-md md:text-[1.2rem] md:leading-[1.5rem]">{title}</h2>
         <p className="font-regular opacity-60 text-sm md:text-base">{info}</p>
       </div>
     </a>
