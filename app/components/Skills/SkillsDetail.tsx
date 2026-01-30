@@ -122,3 +122,33 @@ export const SkillsDetailPython = () => {
     </div>
   );
 };
+
+export const SkillsDetailDaVinci = () => {
+  return (
+    <div className="w-full h-full p-4 flex gap-4">
+      <div className="w-full h-full p-4 flex flex-col gap-4 justify-center">
+        <h2 className='text-lg font-semibold'>DaVinci Resolve</h2>
+
+        <p className='opacity-60'>
+          DaVinci Resolve est un logiciel de post-production et de montage vidéo, que j'utilise depuis longtemps pour mes projets vidéo personnels et universitaires.
+        </p>
+
+        <p>
+          Au cours de ma formation MMI, j&apos;ai eu l&apos;occasion de développer mes compétences sur <a href="https://www.blackmagicdesign.com/fr/products/davinciresolve/" target="_blank" className='link'>DaVinci Resolve</a>, notamment pour des projets en cours d'audiovisuel et de communication, ainsi que pour différents projets personnels.
+        </p>
+
+        <p>
+          Je l'utilise également en complémentarité avec After Effects pour mettre en avant mes différents projets en vidéo.
+        </p>
+      </div>
+      <div className="w-full h-full relative rounded-xl overflow-hidden">
+        <Image
+          src="/skill-example-davinci.jpg"
+          alt="React"
+          fill
+          className='object-cover'
+        />
+      </div>
+    </div>
+  );
+};

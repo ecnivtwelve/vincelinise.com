@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from 'motion/react';
 import clsx from "clsx";
-import { SkillsDetailAE, SkillsDetailFigma, SkillsDetailPython, SkillsDetailReact, SkillsDetailSvelte } from "./SkillsDetail";
+import { SkillsDetailAE, SkillsDetailDaVinci, SkillsDetailFigma, SkillsDetailPython, SkillsDetailReact, SkillsDetailSvelte } from "./SkillsDetail";
 
 const Skills = () => {
   const skills = [
@@ -37,11 +37,11 @@ const Skills = () => {
       component: SkillsDetailPython
     },
     {
-      slug: "svelte",
-      icon: "/comp-svelte.svg",
-      title: "Svelte & SvelteKit",
-      type: "Développement front-end",
-      component: () => null
+      slug: "davinci",
+      icon: "/comp-davinci.png",
+      title: "DaVinci Resolve",
+      type: "Montage vidéo et VFX",
+      component: SkillsDetailDaVinci
     },
   ];
 
@@ -61,8 +61,8 @@ const Skills = () => {
             transition={{ delay: 0.1 + index * 0.05, duration: 0.5, type: 'spring' }}
           >
             <div
-              className={clsx("flex-1 flex p-4 flex-row lg:flex-col items-center justify-start lg:justify-center bg-white border shadow-md rounded-xl gap-4 lg:gap-0 hover:shadow-lg hover:-translate-y-1  transition-all duration-150 cursor-pointer active:scale-95",
-                selectedSkill === skill.slug ? "border-neutral-400 -translate-y-1" : "border-neutral-300 hover:border-neutral-400"
+              className={clsx("flex-1 flex p-4 flex-row lg:flex-col items-center justify-start lg:justify-center bg-white border shadow-md rounded-xl gap-4 lg:gap-0 hover:shadow-lg hover:-translate-y-1  transition-all duration-150 cursor-pointer active:scale-95 border-neutral-300",
+                selectedSkill === skill.slug ? "lg:border-neutral-400 lg:-translate-y-1" : "lg:hover:border-neutral-400"
               )}
               onClick={() => {
                 if (selectedSkill === skill.slug) {
@@ -83,7 +83,7 @@ const Skills = () => {
       </div>
 
       <div
-        className={clsx("transition-height duration-300", selectedSkill ? "h-112" : "h-1")}
+        className={clsx("hidden lg:block transition-height duration-300", selectedSkill ? "h-112" : "h-1")}
       >
         <AnimatePresence>
           {selectedSkill && (
