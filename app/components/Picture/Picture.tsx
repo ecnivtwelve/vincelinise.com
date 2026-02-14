@@ -9,7 +9,7 @@ const Picture = ({ src, description, width = 18, rotate = 3, invert = false }: {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "65vh end"]
+    offset: ["start end", "60vh end"]
   })
 
   const x = useTransform(scrollYProgress, [0, 1], [invert ? -300 : 300, 0]);
