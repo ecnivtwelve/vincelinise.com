@@ -9,12 +9,12 @@ const Picture = ({ src, description, width = 18, rotate = 3, invert = false }: {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "60vh end"]
+    offset: ["start end", "65vh end"]
   })
 
   const x = useTransform(scrollYProgress, [0, 1], [invert ? -300 : 300, 0]);
   const rotateVal = useTransform(scrollYProgress, [0, 1], [invert ? -rotate : rotate * (invert ? -3 : 3), rotate]);
-  const opacityVal = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const opacityVal = useTransform(scrollYProgress, [0, 0.2, 1], [0, 1, 1]);
 
   return (
     <motion.div
