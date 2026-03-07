@@ -6,19 +6,19 @@ import { motion } from 'motion/react';
 const SoftSkills = () => {
   const softskills = [
     {
-      title: "Leadership et Esprit d'Initiative",
+      title: "Leadership et esprit d'initiative",
       description: "En tant que président de Papillon, j'ai appris à gérer une équipe et à mettre en commun différentes compétences pour mener à bien un projet dans le temps."
     },
     {
-      title: "Autonomie et Curiosité",
+      title: "Autonomie et curiosité",
       description: "Passionné, je m'intéresse et me forme continuellement aux dernières technologies. Je cherche à comprendre comment les choses fonctionnent et comment les améliorer."
     },
     {
-      title: "Empathie Utilisateur",
+      title: "Empathie utilisateur",
       description: "Mon approche du design est centrée sur l'humain. Je cherche avant tout à résoudre des problématiques identifiables avec une solution qui apporte une expérience agréable et intuitive."
     },
     {
-      title: "Capacité d'Adaptation",
+      title: "Capacité d'adaptation",
       description: "Jongler entre le code et le design, ou s'adapter à de nouveaux environnements de travail est naturel pour moi. Je pivote rapidement selon les enjeux, les projets et les équipes."
     },
   ];
