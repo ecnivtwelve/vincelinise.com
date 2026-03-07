@@ -61,7 +61,7 @@ export default async function ProjectPage({ params }: Props) {
       <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-hidden z-1" style={{ backgroundColor: paperColor }}>
         <ProjectHeader image={image} logo={logo} title={title} accentColor={accentColor} />
 
-        <div className="flex flex-row w-full items-center justify-center gap-2 mt-6 flex-wrap">
+        <div className="flex flex-row w-full items-center justify-center gap-2 mt-6 flex-wrap px-5">
           <span className="px-3 py-1.5 bg-neutral-200 border border-neutral-200 rounded-full text-sm font-semibold">
             {new Date(date).toLocaleDateString("fr-FR", {
               year: "numeric",
@@ -76,7 +76,7 @@ export default async function ProjectPage({ params }: Props) {
         </div>
 
         {tools && tools.length > 0 && (
-          <div className="flex flex-row w-full items-center justify-center gap-6 mt-4 flex-wrap">
+          <div className="flex flex-row w-full items-center justify-center gap-6 gap-y-4 mt-4 flex-wrap px-5">
             {tools.map((tool) => {
               const toolInfo = toolsList[tool];
               console.log(tool, toolInfo);
