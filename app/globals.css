@@ -96,3 +96,7 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+.serif {
+  font-family: 'VL-Sentient';
+}

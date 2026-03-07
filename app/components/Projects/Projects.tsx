@@ -50,12 +50,13 @@ const Projects = () => {
         className="w-full"
       >
         <ProjectCard
-          icon="/icon-lpas.png"
-          banner="/banner-lpas.png"
-          name="Le Phare aux Spectacles"
-          title="Design UI/UX d’une application de spectacles"
-          type="Projet MMI"
-          info="Design d’interface utilisateur"
+          icon="/projects/strella-icon.png"
+          banner="/projects/strella-banner.jpg"
+          name="StrellaStudio"
+          title="Identité visuelle d'un studio de développement Web"
+          type="Freelance / Commission"
+          info="Branding et identité visuelle"
+          href="/projects/strellastudio"
         />
       </motion.div>
     </div>

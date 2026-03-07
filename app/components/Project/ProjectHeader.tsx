@@ -28,23 +28,25 @@ const ProjectHeader = ({ image, logo, title, accentColor }: { image: string; log
         </motion.div>
       </div>
 
-      <div className="relative w-full h-24 md:h-36 -mt-16 drop-shadow-lg">
-        <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={logoLoaded ? { scale: 1, opacity: 1 } : undefined}
-          transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-          className="relative w-full h-24 md:h-36"
-        >
-          <Image
-            src={logo}
-            alt={title}
-            fill
-            className="object-contain"
-            sizes="(max-width: 896px) 100vw, 896px"
-            onLoad={() => setLogoLoaded(true)}
-          />
-        </motion.div>
-      </div>
+      {logo && (
+        <div className="relative w-full h-24 md:h-36 -mt-16 drop-shadow-lg">
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={logoLoaded ? { scale: 1, opacity: 1 } : undefined}
+            transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
+            className="relative w-full h-24 md:h-36"
+          >
+            <Image
+              src={logo}
+              alt={title}
+              fill
+              className="object-contain"
+              sizes="(max-width: 896px) 100vw, 896px"
+              onLoad={() => setLogoLoaded(true)}
+            />
+          </motion.div>
+        </div>
+      )}
     </>
   );
 };

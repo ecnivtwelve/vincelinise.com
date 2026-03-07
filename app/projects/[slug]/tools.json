@@ -38,5 +38,10 @@
     "label": "Motion",
     "icon": "/comp-motion.svg",
     "url": "https://motion.dev/"
+  },
+  "ai": {
+    "label": "Illustrator",
+    "icon": "/comp-ai.svg",
+    "url": "https://www.adobe.com/fr/products/illustrator.html"
   }
 }
