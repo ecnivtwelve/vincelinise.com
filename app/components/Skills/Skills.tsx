@@ -45,7 +45,7 @@ const Skills = () => {
     },
   ];
 
-  const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+  const [selectedSkill, setSelectedSkill] = useState<string | null>("react");
 
   return (
     <div className="w-full mt-2 mb-12 flex-col flex gap-4 px-4 lg:px-0">
