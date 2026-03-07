@@ -55,6 +55,12 @@ body {
     text-underline-offset: 3px;
   }
 
+  .link-hidden:hover {
+    color: var(--primary) !important;
+    text-underline-offset: 3px;
+    text-decoration: underline;
+  }
+
   .link:hover {
     text-decoration: underline;
   }

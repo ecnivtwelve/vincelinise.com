@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Footer from "@/app/components/Footer/Footer";
 import Navigation from "@/app/components/Navigation/Navigation";
 import ProjectHeader from "@/app/components/Project/ProjectHeader";
+import toolsList from "./tools.json";
 
 interface Props {
   params: Promise<{
@@ -44,7 +45,7 @@ export default async function ProjectPage({ params }: Props) {
     notFound();
   }
 
-  const { title, description, date, tags, image, logo, accentColor, backgroundColor, paperColor } = project.frontmatter;
+  const { title, description, date, tags, tools, image, logo, accentColor, backgroundColor, paperColor } = project.frontmatter;
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0" style={{ backgroundColor: backgroundColor }}>
@@ -73,6 +74,22 @@ export default async function ProjectPage({ params }: Props) {
             </span>
           ))}
         </div>
+
+        {tools && tools.length > 0 && (
+          <div className="flex flex-row w-full items-center justify-center gap-6 mt-4 flex-wrap">
+            {tools.map((tool) => {
+              const toolInfo = toolsList[tool];
+              console.log(tool, toolInfo);
+              if (!toolInfo) return null;
+              return (
+                <a key={tool} className="flex items-center gap-2 text-md font-medium link-hidden" href={toolInfo.url} target="_blank" rel="noopener noreferrer">
+                  <Image src={toolInfo.icon} alt={toolInfo.label} width={24} height={24} />
+                  {toolInfo.label}
+                </a>
+              );
+            })}
+          </div>
+        )}
 
         <div className="prose prose-lg prose-blue max-w-none p-6 lg:p-12">
           <MDXRemote source={project.content} />

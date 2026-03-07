@@ -1,0 +1,42 @@
+{
+  "figma": {
+    "label": "Figma",
+    "icon": "/comp-figma.svg",
+    "url": "https://www.figma.com/"
+  },
+  "react": {
+    "label": "React",
+    "icon": "/comp-react.svg",
+    "url": "https://react.dev/"
+  },
+  "react-native": {
+    "label": "React Native",
+    "icon": "/comp-react.svg",
+    "url": "https://reactnative.dev/"
+  },
+  "ae": {
+    "label": "After Effects",
+    "icon": "/comp-ae.svg",
+    "url": "https://www.adobe.com/fr/products/aftereffects.html"
+  },
+  "js": {
+    "label": "JavaScript",
+    "icon": "/comp-js.svg",
+    "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+  },
+  "ts": {
+    "label": "TypeScript",
+    "icon": "/comp-ts.svg",
+    "url": "https://www.typescriptlang.org/"
+  },
+  "electron": {
+    "label": "Electron",
+    "icon": "/comp-electron.svg",
+    "url": "https://www.electronjs.org/"
+  },
+  "motion": {
+    "label": "Motion",
+    "icon": "/comp-motion.svg",
+    "url": "https://motion.dev/"
+  }
+}
