@@ -43,5 +43,10 @@
     "label": "Illustrator",
     "icon": "/comp-ai.svg",
     "url": "https://www.adobe.com/fr/products/illustrator.html"
+  },
+  "davinci": {
+    "label": "DaVinci Resolve",
+    "icon": "/comp-davinci.png",
+    "url": "https://www.blackmagicdesign.com/fr/products/davinciresolve/"
   }
 }
