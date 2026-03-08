@@ -28,7 +28,7 @@ export default function Home() {
         <div className="flex flex-col gap-6 w-full">
           {projects.map((project) => (
             <div key={project.slug} className="group relative">
-              <Link href={`/projects/${project.slug}`} className="flex flex-row gap-6">
+              <Link href={`/projects/${project.slug}`} className="flex flex-col md:flex-row gap-6">
                 <div className="rounded-xl overflow-hidden relative aspect-video h-31 hover:scale-105 transition-transform duration-200">
                   <Image src={project.frontmatter.image} alt="" fill objectFit="cover" />
                 </div>

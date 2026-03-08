@@ -27,7 +27,7 @@ export default function Home() {
         <div className="flex flex-col gap-6 w-full">
           {articles.map((project) => (
             <Link key={project.slug} href={`/articles/${project.slug}`}>
-              <div className="flex flex-row gap-4 text-lg">
+              <div className="flex flex-col md:flex-row gap-1 md:gap-4 text-lg">
                 <p className="opacity-60">{new Date(project.frontmatter.date).toLocaleDateString('fr-FR', {
                   year: "numeric",
                   month: "long",

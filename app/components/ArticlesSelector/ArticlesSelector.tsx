@@ -23,8 +23,8 @@ const ArticlesSelector = ({ selected }) => {
     <div className="flex flex-row gap-6 items-center">
       {selection.map((item) => (
         <Link key={item.href} href={item.href} className={clsx("flex flex-row items-center gap-2 opacity-50 hover:opacity-100", item.href === selected && "opacity-100")}>
-          <item.icon width={32} height={32} className="" />
-          <h1 className={clsx("font-light text-3xl tracking-tight", item.href === selected && "font-semibold")}>{item.label}</h1>
+          <item.icon className="w-6 h-6 md:w-8 md:h-8" />
+          <h1 className={clsx("font-light text-2xl md:text-3xl tracking-tight", item.href === selected && "font-semibold")}>{item.label}</h1>
         </Link>
       ))}
     </div>
