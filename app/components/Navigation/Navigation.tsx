@@ -18,7 +18,7 @@ const Navigation = () => {
 
   const nav = [
     {
-      title: "À propos",
+      title: "Accueil",
       href: "/",
       icon: HomeIcon
     },
