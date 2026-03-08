@@ -9,23 +9,29 @@ import LinkedInIcon from "../Icons/LinkedIn";
 import HomeIcon from "../Icons/Home";
 import PenIcon from "../Icons/Pen";
 import GitHubIcon from "../Icons/GitHub";
+import NewspaperIcon from "../Icons/Newspaper";
+import GridIcon from "../Icons/Grid";
 
 const Navigation = () => {
+  const currentPath = usePathname();
+  const browsingProjects = currentPath.startsWith("/projects") || currentPath.startsWith("/articles");
+
   const nav = [
     {
-      title: "Accueil",
+      title: "À propos",
       href: "/",
       icon: HomeIcon
     },
-    {
+    currentPath.startsWith("/articles") ? {
+      title: "Articles",
+      href: "/articles",
+      icon: NewspaperIcon
+    } : {
       title: "Projets",
       href: "/projects",
-      icon: PenIcon
+      icon: GridIcon
     }
   ]
-
-  const currentPath = usePathname();
-  const browsingProjects = currentPath.startsWith("/projects/");
 
   return (
     <nav className="flex flex-row gap-1 bg-white shadow-lg rounded-full p-1.5 h-12 md:h-14 -mb-12 md:-mb-14 z-10">
@@ -39,7 +45,7 @@ const Navigation = () => {
       {nav.map((item) => (
         <Link key={item.title} href={item.href}
           className={clsx("font-medium text-md px-4 lg:px-6 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
-            currentPath === item.href || (item.href === "/projects" && browsingProjects) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60"
+            currentPath === item.href || ((item.href === "/projects" || item.href === "/articles") && browsingProjects) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60"
           )}
         >
           <item.icon className="w-6 h-6" />

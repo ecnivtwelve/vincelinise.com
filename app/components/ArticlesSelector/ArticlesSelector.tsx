@@ -3,6 +3,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import GridIcon from "../Icons/Grid";
 import NewspaperIcon from "../Icons/Newspaper";
+import PenIcon from "../Icons/Pen";
 
 const ArticlesSelector = ({ selected }) => {
   const selection = [
