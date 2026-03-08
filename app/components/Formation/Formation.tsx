@@ -29,7 +29,7 @@ const Formation = () => {
 
   return (
     <div className="w-full pt-24 flex flex-col gap-10 px-4 md:px-6 lg:px-0">
-      <h2 className="text-4xl lg:text-5xl font-light">Ma formation</h2>
+      <h2 className="text-4xl lg:text-5xl font-light tracking-tight">Ma formation</h2>
 
       <div className="flex flex-col md:flex-row gap-8 px-1">
         {formations.map((formation, index) => (

@@ -25,7 +25,7 @@ const SoftSkills = () => {
 
   return (
     <div className="w-full mt-24 flex-col flex gap-8 px-6 lg:px-0">
-      <h2 className="text-4xl lg:text-5xl font-light">Soft-skills</h2>
+      <h2 className="text-4xl lg:text-5xl font-light tracking-tight">Soft-skills</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
         {softskills.map((skill, index) => (

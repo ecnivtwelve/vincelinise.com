@@ -49,7 +49,7 @@ const Skills = () => {
 
   return (
     <div className="w-full mt-2 mb-12 flex-col flex gap-4 px-4 lg:px-0">
-      <h2 className="text-4xl lg:text-5xl font-light">Compétences techniques</h2>
+      <h2 className="text-4xl lg:text-5xl font-light tracking-tight">Compétences techniques</h2>
 
       <div className="w-full flex gap-2 flex-col lg:flex-row mt-4">
         {skills.map((skill, index) => (

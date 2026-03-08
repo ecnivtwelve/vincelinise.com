@@ -27,7 +27,7 @@ export default function Hero() {
         initial={initialAnimation}
         animate={finalAnimation}
         transition={{ ...transition, delay: 0.1 }}
-        className="text-3xl md:text-[2.5rem] tracking-[-0.01em] leading-[2.8rem] md:leading-[2.9rem] text-center mt-[-10px]">
+        className="text-3xl md:text-[2.5rem] tracking-tight leading-[2.8rem] md:leading-[2.9rem] text-center mt-[-10px]">
         Enchanté, moi c&apos;est <Highlight delay={0.2}>Vince Linise</Highlight> ,<br />
         <Highlight delay={0.5} className="vl-light">designer</Highlight> d'interfaces & développeur
       </motion.h1>

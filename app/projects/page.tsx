@@ -5,6 +5,7 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import type { Metadata } from 'next'
 import Image from "next/image";
 import Link from "next/link";
+import ArticlesSelector from "../components/ArticlesSelector/ArticlesSelector";
 
 export const metadata: Metadata = {
   title: 'Vince Linise - Mes projets',
@@ -17,7 +18,13 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0">
       <Navigation />
 
-      <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-3 md:px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
+      <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
+        <div className="flex flex-col gap-6 w-full">
+          <ArticlesSelector selected="/projects" />
+
+          <p>Je crée beaucoup de choses. Tant de choses que je peux vous montrer aujourd'hui sur ma page de projets. Ici, vous retrouverez tout, du développement au design, en passant par l'expérience utilisateur et le montage vidéo.</p>
+        </div>
+        
         <div className="flex flex-col gap-6 w-full">
           {projects.map((project) => (
             <div key={project.slug} className="group relative">

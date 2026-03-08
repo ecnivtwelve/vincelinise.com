@@ -11,9 +11,12 @@ export interface ProjectData {
     description: string;
     date: string;
     tags: string[];
+    tools: string[];
     image: string;
     logo: string;
     accentColor: string;
+    backgroundColor: string;
+    paperColor: string;
     [key: string]: any;
   };
   content: string;
