@@ -4,6 +4,7 @@ import { getAllProjects } from "@/lib/projects";
 import ProjectCard from "../components/Projects/ProjectCard";
 import type { Metadata } from 'next'
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Vince Linise - Mes projets',
@@ -20,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col gap-6 w-full">
           {projects.map((project) => (
             <div key={project.slug} className="group relative">
-              <a href={`/projects/${project.slug}`} className="flex flex-row gap-6">
+              <Link href={`/projects/${project.slug}`} className="flex flex-row gap-6">
                 <div className="rounded-xl overflow-hidden relative aspect-video h-31 hover:scale-105 transition-transform duration-200">
                   <Image src={project.frontmatter.image} alt="" fill objectFit="cover" />
                 </div>
@@ -36,7 +37,7 @@ export default function Home() {
                   <h2 className="font-semibold text-md md:text-xl">{project.frontmatter.title}</h2>
                   <p className="font-regular opacity-60 text-sm md:text-base">{project.frontmatter.description}</p>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
