@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 
-import { Geist } from 'next/font/google'
+import { IBM_Plex_Sans } from 'next/font/google'
 
-const geist = Geist({
+const font = IBM_Plex_Sans({
   subsets: ['latin'],
 })
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={geist.className + ' antialiased text-foreground bg-background overflow-x-hidden'}>
+      <body className={font.className + ' antialiased text-foreground bg-background overflow-x-hidden'}>
         <div className="gradient-bg"></div>
 
         <SmoothScroll />
