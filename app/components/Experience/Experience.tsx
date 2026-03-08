@@ -27,7 +27,7 @@ const Experience = () => {
       logo: "/exp-stst.jpg",
       title: "Développeur et UX designer",
       company: "StrellaStudio",
-      location: "à distance de Dole (39)",
+      location: "Dole (39)",
       date: "janvier 2024 à aujourd’hui",
       description:
         "Développeur et graphiste UI/UX pour les clients de l'association StrellaStudio, qui fournit des services numériques aux entreprises qui souhaitent se développer sur le Web.",
@@ -37,7 +37,7 @@ const Experience = () => {
       logo: "/exp-cozy.jpg",
       title: "Développeur front-end",
       company: "Cozy Cloud",
-      location: "à distance de Paris (75)",
+      location: "Paris (75)",
       date: "Stage de juin 2024 à août 2024",
       description:
         "Développement et planification d'un client front-end et back-end d'aggrégation de données scolaires pour élèves du secondaire sur la plateforme de connecteurs de Cozy Cloud pour un déploiement auprès des académies.",
