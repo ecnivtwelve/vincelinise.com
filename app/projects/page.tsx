@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation/Navigation";
 import { getAllProjects } from "@/lib/projects";
 import ProjectCard from "../components/Projects/ProjectCard";
 import type { Metadata } from 'next'
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Vince Linise - Mes projets',
@@ -16,18 +17,26 @@ export default function Home() {
       <Navigation />
 
       <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-3 md:px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        <div className="flex flex-col gap-6 w-full">
           {projects.map((project) => (
             <div key={project.slug} className="group relative">
-              <ProjectCard
-                href={`/projects/${project.slug}`}
-                icon={project.frontmatter.icon}
-                banner={project.frontmatter.image}
-                name={project.frontmatter.project} // ProjectCard uses name for the small title
-                title={project.frontmatter.title} // Using description as the main title/info
-                type={project.frontmatter.tags[0] || "Projet"}
-                info={project.frontmatter.description}
-              />
+              <a href={`/projects/${project.slug}`} className="flex flex-row gap-6">
+                <div className="rounded-xl overflow-hidden relative aspect-video h-31 hover:scale-105 transition-transform duration-200">
+                  <Image src={project.frontmatter.image} alt="" fill objectFit="cover" />
+                </div>
+                <div className="flex flex-col gap-2 flex-1 min-w-0 py-1">
+                  <div className="flex gap-2 items-center w-full">
+                    <Image src={project.frontmatter.icon} alt="" width={20} height={20} className="w-[20px] h-[20px]" />
+                    <p className="font-semibold flex-1 truncate text-sm md:text-base">{project.frontmatter.project}</p>
+                    <p className="font-regular opacity-60 truncate max-w-[50%] text-sm md:text-base">{new Date(project.frontmatter.date).toLocaleDateString('fr-FR', {
+                      year: "numeric",
+                      month: "long",
+                    })}</p>
+                  </div>
+                  <h2 className="font-semibold text-md md:text-xl">{project.frontmatter.title}</h2>
+                  <p className="font-regular opacity-60 text-sm md:text-base">{project.frontmatter.description}</p>
+                </div>
+              </a>
             </div>
           ))}
         </div>
