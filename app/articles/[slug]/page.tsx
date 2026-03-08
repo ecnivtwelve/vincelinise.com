@@ -55,7 +55,7 @@ export default async function ProjectPage({ params }: Props) {
       <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
         <div className="flex flex-col gap-4 w-full">
           <Link href="/articles" className="link">← Retour aux articles</Link>
-          <h1 className="text-3xl leading-tight font-semibold">{title}</h1>
+          <h1 className="text-4xl leading-tight font-bold">{title}</h1>
 
           <div className="flex flex-row w-full items-start justify-start gap-2 flex-wrap">
             <span className="px-3 py-1.5 bg-neutral-200 border border-neutral-200 rounded-full text-sm font-semibold">
