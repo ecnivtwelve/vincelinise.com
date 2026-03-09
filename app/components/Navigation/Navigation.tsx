@@ -34,7 +34,7 @@ const Navigation = () => {
   ]
 
   return (
-    <nav className="flex flex-row gap-1 bg-white shadow-lg rounded-full p-1.5 h-12 md:h-14 -mb-12 md:-mb-14 z-10">
+    <nav className="fixed top-1 md:top-2 lg:top-6 flex flex-row gap-1 bg-white shadow-lg rounded-full p-1.5 h-12 md:h-14 -mb-12 md:-mb-14 z-10">
       <div className="w-fit lg:w-56 flex items-center gap-2 p-1">
         <Link href="/" className="flex items-center gap-3">
           <Image src="/me.jpg" alt="" width={128} height={128} className="rounded-full min-w-9 w-9 aspect-square" />
