@@ -1,8 +1,13 @@
 "use client";
 
 import React from "react";
-import {Plyr} from "plyr-react";
+import dynamic from "next/dynamic";
 import "plyr-react/plyr.css";
+
+const Plyr = dynamic(
+  () => import("plyr-react").then((mod) => mod.Plyr),
+  { ssr: false }
+);
 
 type VideoProps = {
   src: string;
