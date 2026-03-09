@@ -45,7 +45,7 @@ export default function Video({
   poster,
 }: VideoProps) {
   return (
-    <div className={className + " overflow-hidden not-prose"}>
+    <div className={className + " overflow-hidden not-prose mb-4"}>
       <Plyr
         height={"100%"}
         source={{
