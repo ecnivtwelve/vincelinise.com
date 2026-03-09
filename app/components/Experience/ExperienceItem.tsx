@@ -12,7 +12,8 @@ const ExperienceItem = ({
   date,
   description,
   remote,
-  delay
+  delay,
+  link
 }: {
   logo?: string;
   title?: string;
@@ -22,6 +23,7 @@ const ExperienceItem = ({
   description?: string;
   remote?: boolean;
   delay?: number;
+  link?: string;
 }) => {
   return (
     <motion.div
@@ -36,7 +38,7 @@ const ExperienceItem = ({
 
       <div>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-md font-semibold">{company}<span className="opacity-60 font-normal">{remote ? ", à distance de " : ", à "}</span>{location}</p>
+        <p className="text-md font-semibold"><a className="link-hidden" href={link} target="_blank" rel="noopener noreferrer">{company}</a><span className="opacity-60 font-normal">{remote ? ", à distance de " : ", à "}</span>{location}</p>
         <p className="opacity-60">{date}</p>
         <p className="mt-3">
           {description}

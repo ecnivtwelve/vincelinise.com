@@ -13,6 +13,7 @@
   --foreground: #26214D;
   --primary: #0054DB;
   --plyr-color-main: var(--primary);
+  --bezier-jiggle: cubic-bezier(0.55, -0.03, 0.15, 1.41);
 }
 
 @theme inline {

@@ -9,9 +9,16 @@ import HomeIcon from "../Icons/Home";
 import GitHubIcon from "../Icons/GitHub";
 import NewspaperIcon from "../Icons/Newspaper";
 import GridIcon from "../Icons/Grid";
+import { useMotionValueEvent, useScroll } from 'motion/react';
 
 const Navigation = () => {
   const currentPath = usePathname();
+  const { scrollY } = useScroll();
+  const [hasScrolled, setHasScrolled] = React.useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setHasScrolled(latest > 10);
+  });
 
   const nav = [
     {
@@ -35,8 +42,8 @@ const Navigation = () => {
 
   return (
     <div className="w-full flex items-center justify-center">
-      <nav className="fixed top-1 md:top-2 lg:top-6 flex flex-row gap-1 bg-white shadow-lg rounded-full p-1.5 h-12 md:h-14 -mb-12 md:-mb-14 z-10">
-        <div className="w-fit lg:w-42 flex items-center gap-2 p-1">
+      <nav className={clsx("fixed top-1 md:top-2 flex flex-row gap-1 bg-white rounded-full px-1 py-1.5 h-12 -mb-12 md:-mb-14 z-10 transition-all ease-(--bezier-jiggle) duration-270", hasScrolled ? "shadow-xl/15 lg:top-3" : "shadow-lg lg:top-6 md:h-14 lg:px-1.5")}>
+        <div className={clsx("transition-all ease-(--bezier-jiggle) duration-270 flex items-center gap-2 p-1", hasScrolled ? "lg:w-39" : "w-fit lg:w-42")}>
           <Link href="/" className="flex items-center gap-3">
             <Image src="/me.jpg" alt="" width={128} height={128} className="rounded-full min-w-9 w-9 aspect-square" />
             <p className="font-bold leading-tight text-md hidden lg:block">Vince Linise</p>
@@ -45,8 +52,8 @@ const Navigation = () => {
 
         {nav.map((item) => (
           <Link key={item.title} href={item.href}
-            className={clsx("font-medium text-md leading-tight px-4 lg:px-5 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
-              (item.sub ? currentPath.startsWith(item.href) : item.href === currentPath) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60"
+            className={clsx("font-medium text-md leading-tight px-4 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
+              (item.sub ? currentPath.startsWith(item.href) : item.href === currentPath) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60", hasScrolled ? "" : "lg:px-5"
             )}
           >
             <item.icon fill="var(--foreground)" className="w-6 h-6" />
@@ -54,12 +61,12 @@ const Navigation = () => {
           </Link>
         ))}
 
-        <div className="w-full lg:w-42 items-center justify-end gap-4 p-1 px-4 hidden md:flex">
-          <a href="https://github.com/ecnivtwelve" target="_blank" className="opacity-60 hover:opacity-100 transition-all">
-            <GitHubIcon className="w-6 h-6" />
+        <div className={clsx("w-22 transition-all ease-(--bezier-jiggle) duration-270 items-center justify-end gap-4 p-1 px-4 hidden md:flex", hasScrolled ? "" : "lg:w-42")}>
+          <a href="https://github.com/ecnivtwelve" target="_blank" className="opacity-60 hover:opacity-100 transition-all ease-(--bezier-jiggle) duration-270">
+            <GitHubIcon fill="var(--foreground)" className="w-6 h-6" />
           </a>
-          <a href="https://www.linkedin.com/in/vincelinise/" target="_blank" className="opacity-60 hover:opacity-100 transition-all">
-            <LinkedInIcon className="w-6 h-6" />
+          <a href="https://www.linkedin.com/in/vincelinise/" target="_blank" className="opacity-60 hover:opacity-100 transition-all ease-(--bezier-jiggle) duration-270">
+            <LinkedInIcon fill="var(--foreground)" className="w-6 h-6" />
           </a>
         </div>
       </nav>
