@@ -58,7 +58,7 @@ const Skills = () => {
             className="flex-1"
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ delay: 0.1 + index * 0.05, duration: 0.5, type: 'spring' }}
+            transition={{ delay: 0.1 + index * 0.1, duration: 0.7, type: 'spring' }}
           >
             <div
               className={clsx("flex-1 flex p-4 flex-row lg:flex-col items-center justify-start lg:justify-center bg-white border shadow-md rounded-xl gap-4 lg:gap-0 hover:shadow-lg hover:-translate-y-1  transition-all duration-150 cursor-pointer active:scale-95 border-neutral-300",

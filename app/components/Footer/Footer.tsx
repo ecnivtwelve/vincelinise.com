@@ -13,7 +13,7 @@ interface FooterProps {
 export default function Footer({ backgroundColor = "var(--background)" }: FooterProps) {
   return (
     <footer className="w-full bg-[#26214D] text-white mh-12 min-w-0  w-full max-w-4xl rounded-2xl lg:rounded-3xl p-10 lg:p-20 gap-10 flex flex-col overflow-hidden">
-      <p className="text-white text-4xl lg:text-5xl font-light tracking-tighter">Besoin d’échanger autour d’un café ou d’un <span className="text-[#A3C7FF] font-medium">kouign-amann</span> ?</p>
+      <p className="text-white text-4xl lg:text-5xl font-light tracking-tight">Besoin d’échanger autour d’un café ou d’un <span className="text-[#A3C7FF] font-medium">kouign-amann</span> ?</p>
 
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 max-w-160">
         <a href="mailto:contact@vincelinise.com" className="flex gap-3 items-center hover:text-[#A3C7FF]">

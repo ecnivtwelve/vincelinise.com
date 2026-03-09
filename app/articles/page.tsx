@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex flex-col gap-6 w-full mt-4 lg:mt-0">
           <div className="flex flex-row items-center gap-3 opacity-100">
             <NewspaperIcon fill="var(--foreground)" className="w-8 h-8 md:w-10 md:h-10" />
-            <h1 className="text-3xl md:text-4xl tracking-tight font-semibold md:font-medium">Articles</h1>
+            <h1 className="text-3xl md:text-4xl tracking-tight font-semibold">Articles</h1>
           </div>
 
           <p>Si un jour j'ai envie d'écrire quelque chose, et bien je pourrais le faire juste ici. Cependant si vous, de vous côté, vous avez du temps à perdre, vous pouvez le perdre juste ici.</p>
