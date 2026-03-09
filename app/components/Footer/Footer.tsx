@@ -37,7 +37,10 @@ export default function Footer({ backgroundColor = "var(--background)" }: Footer
         </a>
       </div>
 
-      <p className="opacity-60 text-sm">© 2026 Vince Linise — Tous droits réservés</p>
+      <p className="text-white/60 text-sm">
+        © 2026 Vince Linise — Tous droits réservés sur le contenu<br/>
+        Le code de ce site web est <a href="https://github.com/ecnivtwelve/vincelinise.com" className="link-hidden-stale text-white">open source</a> ainsi que sous <a href="https://github.com/ecnivtwelve/vincelinise.com/blob/main/LICENSE" className="link-hidden-stale text-white">licence libre</a>. 
+      </p>
 
       <div className="w-full flex justify-center -mb-30">
         <div className="w-[1136px]">

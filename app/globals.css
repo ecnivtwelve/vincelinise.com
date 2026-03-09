@@ -63,6 +63,11 @@ body {
     text-decoration: underline;
   }
 
+  .link-hidden-stale:hover {
+    text-underline-offset: 3px;
+    text-decoration: underline;
+  }
+
   .link:hover {
     text-decoration: underline;
   }
