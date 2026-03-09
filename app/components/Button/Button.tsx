@@ -10,7 +10,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLAnchorElement> {
 
 export const Button = ({
   variant = 'primary',
-  color = 'linear-gradient(100deg,var(--primary) 50%,#5d9bff 100%)',
+  color = 'var(--primary)',
   leading,
   children,
   className,
@@ -21,7 +21,7 @@ export const Button = ({
 
   const variantStyles = {
     primary:
-      'text-white bg-blue-500 hover:opacity-90 shadow-md hover:shadow-lg',
+      'text-white bg-blue-500 hover:opacity-90',
     outlined:
       'bg-transparent text-[#26214D] border border-[#26214D] hover:bg-gray-50/50 hover:bg-gray-200 opacity-60',
   };
