@@ -58,8 +58,8 @@ const Navigation = () => {
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }
           }}
-            className={clsx("font-medium text-md leading-tight px-4 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
-              (item.sub ? currentPath.startsWith(item.href) : item.href === currentPath) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60", hasScrolled ? "" : "lg:px-5"
+            className={clsx("font-medium text-md leading-tight px-3.5 h-full flex items-center justify-center gap-1.5 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
+              (item.sub ? currentPath.startsWith(item.href) : item.href === currentPath) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60", hasScrolled ? "" : "lg:px-5 lg:gap-2" 
             )}
           >
             <item.icon fill="var(--foreground)" className="w-6 h-6" />
