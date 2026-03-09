@@ -29,7 +29,7 @@ export default function Home() {
           {projects.map((project) => (
             <div key={project.slug} className="group relative">
               <Link href={`/projects/${project.slug}`} className="flex flex-col md:flex-row gap-6">
-                <div className="rounded-xl overflow-hidden relative aspect-video h-32 group-hover:scale-105 transition-transform duration-200">
+                <div className="rounded-xl overflow-hidden relative aspect-video h-31 group-hover:scale-105 transition-transform duration-200">
                   <Image src={project.frontmatter.image} alt="" fill objectFit="cover" />
                 </div>
                 <div className="flex flex-col gap-2 flex-1 min-w-0 py-1">
