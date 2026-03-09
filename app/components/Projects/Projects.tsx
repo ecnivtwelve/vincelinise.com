@@ -10,7 +10,7 @@ const Projects = () => {
   const transition = { type: 'spring', duration: 0.9, bounce: 0.5 }
 
   return (
-    <div className="flex flex-col lg:flex-row gap-2 my-16 w-full lg:w-[130%]">
+    <div className="flex flex-col lg:flex-row gap-2 my-16 w-full lg:w-[136%] max-w-[calc(100vw-20px)]">
       <motion.div
         initial={initialAnimation}
         animate={finalAnimation}
