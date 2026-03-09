@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Video from '@/app/components/Video/Video';
 
 export const SkillsDetailReact = () => {
   return (
@@ -81,11 +82,13 @@ export const SkillsDetailAE = () => {
         </p>
       </div>
       <div className="w-full h-full relative rounded-xl overflow-hidden">
-        <video
+        <Video
           src="/skill-example-motion.webm"
           autoPlay
           loop
           muted
+          playsInline
+          controls={false}
           className='object-cover w-full h-full'
         />
       </div>

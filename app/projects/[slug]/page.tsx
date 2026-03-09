@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Footer from "@/app/components/Footer/Footer";
 import Navigation from "@/app/components/Navigation/Navigation";
 import ProjectHeader from "@/app/components/Project/ProjectHeader";
+import Video from "@/app/components/Video/Video";
 import toolsList from "./tools.json";
 
 interface Props {
@@ -91,12 +92,13 @@ export default async function ProjectPage({ params }: Props) {
         )}
 
         <div className="prose prose-lg prose-blue max-w-none p-6 lg:p-12">
-          <MDXRemote source={project.content} />
+          <MDXRemote source={project.content} components={{ Video, video: Video }} />
         </div>
 
         <style>{`
         :root {
           --accent-color: ${accentColor || '#3B82F6'};
+          --plyr-color-main: ${accentColor || '#3B82F6'} !important;
         }
         .prose a {
           color: var(--accent-color);

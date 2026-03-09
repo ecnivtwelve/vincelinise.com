@@ -9,6 +9,7 @@ import ProjectHeader from "@/app/components/Project/ProjectHeader";
 import toolsList from "./tools.json";
 import { getArticleBySlug, getArticlesSlugs } from "@/lib/articles";
 import Link from "next/link";
+import Video from "@/app/components/Video/Video";
 
 interface Props {
   params: Promise<{
@@ -72,7 +73,7 @@ export default async function ProjectPage({ params }: Props) {
         </div>
 
         <div className="prose prose-lg prose-blue max-w-none">
-          <MDXRemote source={project.content} />
+          <MDXRemote source={project.content} components={{ Video, video: Video }} />
         </div>
 
         <style>{`

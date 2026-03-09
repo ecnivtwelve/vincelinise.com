@@ -12,6 +12,7 @@
   --background: #E1E7F0;
   --foreground: #26214D;
   --primary: #0054DB;
+  --plyr-color-main: var(--primary);
 }
 
 @theme inline {
