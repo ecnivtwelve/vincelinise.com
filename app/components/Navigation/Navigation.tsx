@@ -2,19 +2,16 @@
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import React from "react";
-import User from "../Hero/User";
 import Image from "next/image";
 import Link from "next/link";
 import LinkedInIcon from "../Icons/LinkedIn";
 import HomeIcon from "../Icons/Home";
-import PenIcon from "../Icons/Pen";
 import GitHubIcon from "../Icons/GitHub";
 import NewspaperIcon from "../Icons/Newspaper";
 import GridIcon from "../Icons/Grid";
 
 const Navigation = () => {
   const currentPath = usePathname();
-  const browsingProjects = currentPath.startsWith("/projects") || currentPath.startsWith("/articles");
 
   const nav = [
     {
