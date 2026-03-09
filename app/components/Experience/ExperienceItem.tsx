@@ -35,8 +35,8 @@ const ExperienceItem = ({
       }
 
       <div>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <p className="text-md">{company}<span className="opacity-60">{remote ? ", à distance de " : ", "}</span>{location}</p>
+        <h3 className="text-xl font-semibold">{title}</h3>
+        <p className="text-md font-semibold">{company}<span className="opacity-60 font-normal">{remote ? ", à distance de " : ", à "}</span>{location}</p>
         <p className="opacity-60">{date}</p>
         <p className="mt-3">
           {description}

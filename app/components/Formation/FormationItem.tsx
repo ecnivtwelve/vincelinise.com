@@ -40,7 +40,7 @@ const FormationItem = ({
         <p className="font-semibold flex-1 truncate">{establishment}</p>
         <p className="font-regular opacity-60 truncate">{city}</p>
       </div>
-      <p className="text-lg font-semibold">
+      <p className="text-2xl tracking-tight leading-tight font-semibold">
         {title}
       </p>
       <p className="text-sm opacity-60">

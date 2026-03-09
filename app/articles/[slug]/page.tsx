@@ -51,7 +51,6 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0">
-      <Navigation />
       <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
         <div className="flex flex-col gap-4 w-full">
           <Link href="/articles" className="link">← Retour aux articles</Link>

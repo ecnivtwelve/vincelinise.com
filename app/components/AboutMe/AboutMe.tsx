@@ -10,7 +10,7 @@ const AboutMe = () => {
     <div className="w-full my-12 flex flex-col gap-12 md:gap-24 relative">
       <div className={containerClass}>
         <div className={textContainerClass}>
-          <h2 className="text-3xl md:text-4xl font-semibold"><Highlight>À propos</Highlight> de moi</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight"><Highlight>À propos</Highlight> de moi</h2>
           <p className="opacity-80 text-md lg:text-lg">
             Je m’appelle Vince Linise et j’ai 18 ans. Pour faire court, mon aventure a commencé le jour où j’ai reçu mon premier ordinateur.<br />
             <br />
@@ -39,7 +39,7 @@ const AboutMe = () => {
         </div>
 
         <div className={textContainerClass}>
-          <h2 className="text-3xl lg:text-4xl font-semibold"><Highlight>Mes projets</Highlight> et travaux</h2>
+          <h2 className="text-3xl lg:text-4xl font-semibold tracking-tight"><Highlight>Mes projets</Highlight> et travaux</h2>
           <p className="opacity-80 text-md lg:text-lg">
             Passionné par l'open-source, je consacre une grande partie de mon énergie à l'association Papillon. En tant que président et développeur, je pilote depuis 4 ans une application mobile qui accompagne aujourd'hui des milliers d'étudiants dans leur quotidien.
             <br />

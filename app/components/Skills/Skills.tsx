@@ -74,7 +74,7 @@ const Skills = () => {
             >
               <Image src={skill.icon} alt={skill.title} width={48} height={48} />
               <div className="lg:mt-3 gap-1 flex flex-col items-start lg:items-center">
-                <p className="lg:text-center text-lg font-semibold leading-6">{skill.title}</p>
+                <p className="lg:text-center text-lg font-semibold leading-6 tracking-tight">{skill.title}</p>
                 <p className="font-sm lg:text-center opacity-60">{skill.type}</p>
               </div>
             </div>

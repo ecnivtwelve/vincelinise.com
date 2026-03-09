@@ -49,8 +49,6 @@ export default async function ProjectPage({ params }: Props) {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0" style={{ backgroundColor: backgroundColor }}>
-      <Navigation />
-
       <div
         className="w-full h-full fixed top-0 left-0 z-0 opacity-50"
         style={{
@@ -62,12 +60,13 @@ export default async function ProjectPage({ params }: Props) {
         <ProjectHeader image={image} logo={logo} title={title} accentColor={accentColor} />
 
         <div className="flex flex-row w-full items-center justify-center gap-2 mt-6 flex-wrap px-5">
-          <span className="px-3 py-1.5 bg-neutral-200 border border-neutral-200 rounded-full text-sm font-semibold">
+          <span className="px-3 py-1.5 rounded-full text-sm font-semibold" style={{ backgroundColor: accentColor, color: "#fff" }}>
             {new Date(date).toLocaleDateString("fr-FR", {
               year: "numeric",
               month: "long",
             })}
           </span>
+
           {tags.map((tag) => (
             <span key={tag} className="px-3 py-1.5 border border-neutral-300 rounded-full text-sm">
               {tag}

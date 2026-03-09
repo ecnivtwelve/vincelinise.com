@@ -8,11 +8,11 @@ const Formation = () => {
       year: "2024-2027",
       establishment: "IUT de Lannion",
       city: "Lannion (22)",
-      title: "Métiers du Multimédia et de l’Internet",
+      title: "Métiers du Multimédia et de l'Internet",
       subtitle: "Bachelor Universitaire de Technologie",
       specificity: "spécialité Développement Web et disp. interactifs",
       description:
-        "Une formation super-polyvalente ou j’apprends à piloter des projets multimédias de A à Z, de l'intégration technique au marketing numérique, avec l'objectif de décrocher mon diplôme en 2027."
+        "Une formation super-polyvalente ou j’apprends à piloter des projets multimédias de A à Z, de l'intégration technique, à la gestion de projet, au marketing numérique."
     },
     {
       icon: "/form-lba.png",

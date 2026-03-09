@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
 
 import { IBM_Plex_Sans } from 'next/font/google'
+import Navigation from "./components/Navigation/Navigation";
 
 const font = IBM_Plex_Sans({
   subsets: ['latin'],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={font.className + ' antialiased text-foreground bg-background overflow-x-hidden'}>
         <div className="gradient-bg"></div>
 
+        <Navigation />
         <SmoothScroll />
         {children}
       </body>
