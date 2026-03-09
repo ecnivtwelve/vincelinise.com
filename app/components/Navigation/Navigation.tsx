@@ -52,6 +52,12 @@ const Navigation = () => {
 
         {nav.map((item) => (
           <Link key={item.title} href={item.href}
+          onClick={(e) => {
+            if(currentPath == item.href) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
             className={clsx("font-medium text-md leading-tight px-4 h-full flex items-center justify-center gap-2 rounded-full cursor-pointer transition-all active:scale-90 hover:scale-105",
               (item.sub ? currentPath.startsWith(item.href) : item.href === currentPath) ? "bg-[#26214D12]" : "hover:bg-[#26214D12] opacity-60", hasScrolled ? "" : "lg:px-5"
             )}
