@@ -29,12 +29,12 @@ const ProjectHeader = ({ image, logo, title, accentColor }: { image: string; log
       </div>
 
       {logo && (
-        <div className="relative w-full h-24 md:h-36 -mt-16 drop-shadow-lg">
+        <div className="relative w-full flex justify-center h-24 md:h-36 -mt-16 drop-shadow-lg/20 transition-all ease-(--bezier-jiggle) duration-200 hover:scale-105 hover:-translate-y-2 hover:drop-shadow-xl/30">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={logoLoaded ? { scale: 1, opacity: 1 } : undefined}
             transition={{ duration: 0.8, type: "spring", bounce: 0.4 }}
-            className="relative w-full h-24 md:h-36"
+            className="relative w-full max-w-160 h-24 md:h-36"
           >
             <Image
               src={logo}
