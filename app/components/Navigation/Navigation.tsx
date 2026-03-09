@@ -42,7 +42,7 @@ const Navigation = () => {
 
   return (
     <div className="w-full flex items-center justify-center">
-      <nav className={clsx("fixed top-1 md:top-2 flex flex-row gap-1 bg-white rounded-full px-1 py-1.5 h-12 -mb-12 md:-mb-14 z-10 transition-all ease-(--bezier-jiggle) duration-270", hasScrolled ? "shadow-xl/15 lg:top-3" : "shadow-lg lg:top-6 md:h-14 lg:px-1.5")}>
+      <nav className={clsx("fixed top-1 md:top-2 flex flex-row md:gap-1 bg-white rounded-full px-1 py-1.5 h-12 -mb-12 md:-mb-14 z-10 transition-all ease-(--bezier-jiggle) duration-270", hasScrolled ? "shadow-xl/15 lg:top-3" : "shadow-lg lg:top-6 md:h-14 lg:px-1.5")}>
         <div className={clsx("transition-all ease-(--bezier-jiggle) duration-270 flex items-center gap-2 p-1", hasScrolled ? "lg:w-39" : "w-fit lg:w-42")}>
           <Link href="/" className="flex items-center gap-3">
             <Image src="/me.jpg" alt="" width={128} height={128} className="rounded-full min-w-9 w-9 aspect-square" />
@@ -63,7 +63,7 @@ const Navigation = () => {
             )}
           >
             <item.icon fill="var(--foreground)" className="w-6 h-6" />
-            {item.title}
+            <p className="text-sm md:text-base"> {item.title}</p>
           </Link>
         ))}
 
