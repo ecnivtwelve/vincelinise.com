@@ -48,7 +48,7 @@ const Navigation = () => {
             <Image src="/me.jpg" alt="" width={128} height={128} className="rounded-full min-w-9 w-9 aspect-square" />
             <p className="font-bold leading-tight text-md hidden lg:block">Vince Linise</p>
           </Link>
-        </div>
+        </div> 
 
         {nav.map((item) => (
           <Link key={item.title} href={item.href}

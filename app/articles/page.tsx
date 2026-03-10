@@ -22,7 +22,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-4xl tracking-tight font-semibold">Articles</h1>
           </div>
 
-          <p>Si un jour j'ai envie d'écrire quelque chose, et bien je pourrais le faire juste ici. Cependant si vous, de vous côté, vous avez du temps à perdre, vous pouvez le perdre juste ici.</p>
+          <p>Si un jour j'ai envie d'écrire quelque chose, et bien je pourrais le faire juste ici. Cependant si vous, de votre côté, vous avez du temps à perdre, vous pouvez le perdre juste ici.</p>
         </div>
 
         <div className="flex flex-col gap-6 w-full">
