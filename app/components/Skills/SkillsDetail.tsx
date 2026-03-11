@@ -86,7 +86,7 @@ export const SkillsDetailAE = () => {
           src="/skill-example-motion.webm"
           autoPlay
           loop
-          muted
+          muted={true}
           playsInline
           controls={false}
           className='object-cover w-full h-full'
