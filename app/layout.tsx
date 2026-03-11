@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "./components/SmoothScroll";
+import { CursorifyProvider } from '@cursorify/react'
 
 import { IBM_Plex_Sans } from 'next/font/google'
 import Navigation from "./components/Navigation/Navigation";

@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import SoftSkills from "./SoftSkills/SoftSkills";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
+import Gallery from "./components/Gallery/Gallery";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Projects />
         <Skills />
+        <Gallery />
         <AboutMe />
         <Map />
         <Formation />

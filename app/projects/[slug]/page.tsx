@@ -7,6 +7,8 @@ import Footer from "@/app/components/Footer/Footer";
 import Navigation from "@/app/components/Navigation/Navigation";
 import ProjectHeader from "@/app/components/Project/ProjectHeader";
 import Video from "@/app/components/Video/Video";
+import LightGalleryWrapper from "@/app/components/Gallery/LightGalleryWrapper";
+import MdxLightboxImage from "@/app/components/Gallery/MdxLightboxImage";
 import toolsList from "./tools.json";
 
 interface Props {
@@ -92,7 +94,7 @@ export default async function ProjectPage({ params }: Props) {
         )}
 
         <div className="prose prose-lg prose-blue max-w-none p-6 lg:p-12">
-          <MDXRemote source={project.content} components={{ Video, video: Video }} />
+          <MDXRemote source={project.content} components={{ Video, video: Video, img: MdxLightboxImage, MdxLightboxImage, LightGalleryWrapper }} />
         </div>
 
         <style>{`
