@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0">
-      <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col gap-10 px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
+      <main className="flex min-w-0 w-full max-w-4xl flex-col gap-10 px-6 lg:px-10 pt-12 lg:pt-16 pb-12 lg:pb-16 bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-visible">
         <div className="flex flex-col gap-6 w-full mt-4 lg:mt-0">
           <div className="flex flex-row items-center gap-3 opacity-100">
             <GridIcon fill="var(--foreground)" className="w-8 h-8 md:w-10 md:h-10" />

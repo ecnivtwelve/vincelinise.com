@@ -51,7 +51,7 @@ export default async function ProjectPage({ params }: Props) {
   const { title, description, date, tags, tools, image, logo, accentColor, backgroundColor, paperColor } = project.frontmatter;
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0" style={{ backgroundColor: backgroundColor }}>
+    <div className="flex flex-col min-h-screen items-center justify-start pt-3 md:pt-5 lg:pt-12 overflow-x-hidden gap-8 pb-4 px-3 md:px-6 lg:px-0" style={{ backgroundColor: backgroundColor }}>
       <div
         className="w-full h-full fixed top-0 left-0 z-0 opacity-50"
         style={{
@@ -59,7 +59,7 @@ export default async function ProjectPage({ params }: Props) {
         }}
       ></div>
 
-      <main className="flex min-h-screen min-w-0 w-full max-w-4xl flex-col bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-hidden z-1" style={{ backgroundColor: paperColor }}>
+      <main className="flex min-w-0 w-full max-w-4xl flex-col bg-[#F9FBFF] rounded-2xl lg:rounded-3xl overflow-hidden z-1" style={{ backgroundColor: paperColor }}>
         <ProjectHeader image={image} logo={logo} title={title} accentColor={accentColor} />
 
         <div className="flex flex-row w-full items-center justify-center gap-2 mt-6 flex-wrap px-5">
