@@ -67,7 +67,7 @@ export default function Video({
         options={{
           controls: controls ? [...controlSet] : [],
           autoplay: autoPlay,
-          muted,
+          muted: muted ? true : false,
           volume: muted ? 0 : 1,
           loop: { active: loop },
           hideControls: !controls,
