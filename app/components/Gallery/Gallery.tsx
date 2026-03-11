@@ -26,6 +26,7 @@ const GalleryImage = ({ src, alt, className, index }: { src: string; alt: string
       initial={{ opacity: 0, y: 30, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ delay: 0.1 + index * 0.06, duration: 0.7, type: 'spring' }}
+      className="block w-full"
     >
       <a
         href={src}
