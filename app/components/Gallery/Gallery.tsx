@@ -30,9 +30,9 @@ const GalleryImage = ({ src, alt, className, index }: { src: string; alt: string
       <a
         href={src}
         data-lg-item
-        className={`block w-full rounded-xl relative border border-neutral-300 shadow-lg overflow-hidden ${className || ""} hover:shadow-xl hover:-translate-y-1 hover:border-neutral-400 transition-all duration-130`}
+        className={`block w-full rounded-2xl relative border border-neutral-300 shadow-lg overflow-hidden ${className || ""} hover:shadow-xl hover:-translate-y-1 hover:border-neutral-400 transition-all duration-130`}
       >
-        <Image className="object-cover" fill src={src} alt={alt} />
+        <Image className="object-cover hover:scale-102 transition-all duration-130" fill src={src} alt={alt} />
       </a>
     </motion.div>
   );
