@@ -82,13 +82,12 @@ export const SkillsDetailAE = () => {
         </p>
       </div>
       <div className="w-full h-full relative rounded-xl overflow-hidden">
-        <Video
+        <video
           src="/skill-example-motion.webm"
           autoPlay
           loop
-          muted={true}
+          muted
           playsInline
-          controls={false}
           className='object-cover w-full h-full'
         />
       </div>
