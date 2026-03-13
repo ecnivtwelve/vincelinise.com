@@ -57,6 +57,24 @@ Pour mettre en avant le projet, une identité visuelle inspirée des styles rét
 
 <sup>Extrait de la vidéo de présentation</sup>
 
+## Le challenge technique
+Compose ton Logo relève de nombreux défis techniques, sur de nombreuses problématiques différentes auxuquelles je n'avais jamais été confronté, notamment :
+- **Interaction tactile** : Concevoir une interface adaptée à une utilisation tactile, avec les paradigmes d'interaction associés (gestes, boutons, etc).
+- **Performance** : Optimiser les performances de l'application pour garantir une expérience fluide, même sur une tablette aux ressources limitées.
+- **Design temps réel** : Créer un système de rendu SVG dynamique capable d'animer et de faire apparaître des éléments tout en les laissant modifiables par l'utilisateur.
+- **Double écran** : Gérer une expérience à double écran, avec une synchronisation en temps réel entre la table tactile et le vidéoprojecteur.
+
+Pour répondre à ces défis, j'ai développé à l'intérieur de Compose ton Logo un système de rendu tirant parti de la puissance de React pour permettre une adaptabilité nécessaire au projet.
+
+Un système de sérialisation et de communication inter-processus a également été mis en place pour permettre la communication entre les deux écrans, la sauvegarde des archives ainsi que le rendu pour l'envoi par e-mail.
+
+<LightGalleryWrapper>
+<div className="w-full flex items-center justify-center">
+<div className="max-w-160">
+  <MdxLightboxImage src="/projects/ctl-render.png" className="w-full min-w-0" alt="" />
+</div></div>
+</LightGalleryWrapper>
+
 ## Le parcours utilisateur
 L'expérience a été pensée pour être intuitive et accessible. Le cheminement se décompose en trois étapes clés :
 - Arrivée : Un écran de veille invite l'utilisateur à "Créer mon logo" tandis que le projecteur affiche la galerie de créations existantes.
