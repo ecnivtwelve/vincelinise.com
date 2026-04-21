@@ -7,14 +7,14 @@ import { motion } from "framer-motion";
 const Gallery: React.FC = () => {
   return (
     <LightGalleryWrapper className="w-full lg:w-[136%] max-w-[calc(100vw-20px)] my-8 grid grid-cols-2 lg:grid-cols-3 gap-3">
-      <GalleryImage index={0} className="h-full" src="/design-papillon-high.jpg" alt="Interface de l'application papillon" />
+      <GalleryImage index={0} className="h-full" src="/design-papillon-high.jpg" alt="Interface de l'application Papillon" />
       <div className="w-full flex flex-col gap-3">
         <GalleryImage index={1} className="aspect-[4/3]" src="/design-oklou.jpg" alt="Lecteur de musique style Frutiger Aero" />
-        <GalleryImage index={2} className="aspect-[4/3]" src="/design-psup.jpg" alt="Redesign de la tab bar de Parcoursup" />
+        <GalleryImage index={4} className="aspect-[4/3]" src="/design-assignments.jpg" alt="Interface d'un projet de gestion de tâches" />
       </div>
       <div className="w-full flex flex-row gap-3 lg:flex-col lg:col-span-1 col-span-full">
         <GalleryImage index={3} className="aspect-[4/3]" src="/design-flix.jpg" alt="Réimagination de l'expérience mobile FlixBus" />
-        <GalleryImage index={4} className="aspect-[4/3]" src="/design-ctl.jpg" alt="Projet MMI — Interface de Compose ton Logo" />
+        <GalleryImage index={2} className="aspect-[4/3]" src="/design-metro.jpg" alt="Carte des transpports ferroviaires de Rennes" />
       </div>
     </LightGalleryWrapper>
   );
