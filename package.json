@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@cursorify/react": "^0.0.43",
+    "@getpapillon/papicons": "^0.2.1",
     "@tailwindcss/oxide": "^4.1.18",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",

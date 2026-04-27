@@ -2,23 +2,29 @@
 
 import React from "react";
 import { motion } from 'motion/react';
+import { Papicons } from '@getpapillon/papicons';
+
 
 const SoftSkills = () => {
   const softskills = [
     {
+      icon: "grades",
       title: "Leadership et esprit d'initiative",
       description: "En tant que président de Papillon, j'ai appris à gérer une équipe et à mettre en commun différentes compétences pour mener à bien un projet dans le temps."
     },
     {
-      title: "Autonomie et curiosité",
-      description: "Passionné, je m'intéresse et me forme continuellement aux dernières technologies. Je cherche à comprendre comment les choses fonctionnent et comment les améliorer."
+      icon: "palette",
+      title: "Vision produit",
+      description: "Je pense chaque projet comme un produit : des idées jusqu'à la mise en ligne, je garde en tête l'expérience utilisateur à tout moment, pour que chaque détail compte."
     },
     {
-      title: "Empathie utilisateur",
-      description: "Mon approche du design est centrée sur l'humain. Je cherche avant tout à résoudre des problématiques identifiables avec une solution qui apporte une expérience agréable et intuitive."
+      icon: "gears",
+      title: "Engagement open-source",
+      description: "Je crois sincèrement que le code partagé va plus loin que le code gardé. Contribuer au monde de l'open-source est pour moi une manière d'apprendre en collaborant."
     },
     {
-      title: "Capacité d'adaptation",
+      icon: "pie",
+      title: "Organisation agile",
       description: "Jongler entre le code et le design, ou s'adapter à de nouveaux environnements de travail est naturel pour moi. Je pivote rapidement selon les enjeux, les projets et les équipes."
     },
   ];
@@ -36,7 +42,10 @@ const SoftSkills = () => {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ delay: 0.1 + index * 0.05, duration: 0.5, type: 'spring' }}
           >
-            <h3 className="text-xl font-semibold">{skill.title}</h3>
+            <div className="flex items-center gap-2">
+              <Papicons name={skill.icon} />
+              <h3 className="text-xl font-semibold">{skill.title}</h3>
+            </div>
             <p className="opacity-70 leading-relaxed">
               {skill.description}
             </p>

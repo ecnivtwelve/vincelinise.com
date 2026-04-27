@@ -7,7 +7,7 @@ import Experience from "./components/Experience/Experience";
 import GhostIcon from "./components/Icons/Ghost";
 
 import Skills from "./components/Skills/Skills";
-import SoftSkills from "./SoftSkills/SoftSkills";
+import SoftSkills from "./components/SoftSkills/SoftSkills";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 import Link from "next/link";

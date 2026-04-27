@@ -6,7 +6,7 @@ import Formation from "./components/Formation/Formation";
 import Experience from "./components/Experience/Experience";
 import Papillon from "./components/Papillon/Papillon";
 import Skills from "./components/Skills/Skills";
-import SoftSkills from "./SoftSkills/SoftSkills";
+import SoftSkills from "./components/SoftSkills/SoftSkills";
 import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 import Gallery from "./components/Gallery/Gallery";
