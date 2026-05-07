@@ -10,7 +10,7 @@ export const SkillsDetailReact = () => {
         <h2 className='text-lg font-semibold'>React et React Native</h2>
 
         <p className='opacity-60'>
-          React est un framework JavaScript utile pour créer des interfaces dynamique et réactives. Il est très populaire dans le monde du développement front-end.
+          React est un framework JavaScript utile pour créer des interfaces dynamiques et réactives. Il est très populaire dans le monde du développement front-end.
         </p>
 
         <p>
