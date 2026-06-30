@@ -98,7 +98,7 @@ export default function Hero() {
           <a href="https://strellastudio.fr/" target="_blank" className="opacity-60 hover:opacity-100 transition-opacity">
             <CompanyStrella className="hidden md:block" />
           </a>
-          <a href="https://www.linagora.com/" target="_blank" className="opacity-60 hover:opacity-100 transition-opacity">
+          <a href="https://dc2scale.fr/" target="_blank" className="opacity-60 hover:opacity-100 transition-opacity">
             <CompanyDC2 />
           </a>
         </motion.div>
