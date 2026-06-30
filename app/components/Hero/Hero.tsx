@@ -10,7 +10,7 @@ import { motion } from "motion/react"
 
 import CompanyPapillon from "../Icons/CompanyPapillon";
 import CompanyStrella from "../Icons/CompanyStrella";
-import CompanyLinagora from "../Icons/CompanyLinagora";
+import CompanyDC2 from "../Icons/CompanyDC2";
 import Highlight from "../Highlight/Highlight";
 
 export default function Hero() {
@@ -99,7 +99,7 @@ export default function Hero() {
             <CompanyStrella className="hidden md:block" />
           </a>
           <a href="https://www.linagora.com/" target="_blank" className="opacity-60 hover:opacity-100 transition-opacity">
-            <CompanyLinagora />
+            <CompanyDC2 />
           </a>
         </motion.div>
       </div>
