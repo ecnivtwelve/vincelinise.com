@@ -4,11 +4,22 @@ import ExperienceItem from "./ExperienceItem";
 const Experience = () => {
   const experiences = [
     {
+      logo: "/exp-dc2.jpg",
+      title: "Alternant designer créatif et Intégrateur Web",
+      company: "dc2scale",
+      location: "Vélizy-Villacoublay (78)",
+      date: "juin 2026 à aujourd’hui",
+      description:
+        "Développeur front-end et UI/UX designer en alternance sur les plateformes numériques proposées aux clients de l'entreprise de datacenters dc2scale, qui conçoit, exploite et maintient des centres de données partout en France.",
+      remote: false,
+      link: "https://dc2scale.fr/"
+    },
+    {
       logo: "/exp-lina.jpg",
       title: "Alternant développeur front-end",
       company: "Linagora",
       location: "Issy-Les-Moulineaux (92)",
-      date: "septembre 2025 à aujourd’hui",
+      date: "septembre 2025 à mai 2026",
       description:
         "Développeur Front-end en alternance sur la solution Twake Workplace, une alternative souveraine et open-source aux environnements de travail collaboratifs. Je contribue majoritairement au développement de l'interface utilisateur en React.",
       remote: true,
