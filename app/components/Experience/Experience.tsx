@@ -21,7 +21,7 @@ const Experience = () => {
       location: "Rennes (35)",
       date: "septembre 2021 à aujourd’hui",
       description:
-        "Papillon est aujourd'hui l'application de vie scolaire open-source la plus téléchargée de France. Elle permet à plus de 1 500 000 élèves d'accéder à leurs données via une interface moderne, intuitive et entièrement personnalisable. En tant que président et développeur, j'ai placé l'expérience utilisateur au cœur de ce projet pour offrir aux étudiants un outil construit par eux et pour eux.",
+        "Papillon est aujourd'hui l'application de vie scolaire open-source la plus téléchargée de France. Elle permet à plus de 1 850 000+ élèves d'accéder à leurs données via une interface moderne, intuitive et entièrement personnalisable. En tant que président et développeur, j'ai placé l'expérience utilisateur au cœur de ce projet pour offrir aux étudiants un outil construit par eux et pour eux.",
       remote: false,
       link: "https://papillon.bzh/"
     },

@@ -22,7 +22,7 @@ const Papillon = () => {
         <h2 className="text-4xl lg:text-5xl font-light tracking-tight">« Un jour, je déploierai mes aîles »...</h2>
         <p className="text-lg text-[#29947A] font-semibold">...ou un truc comme ça, je sais plus</p>
         <p>
-          Papillon, c’est mon plus gros projet depuis toujours. En résumé, c’est une appli ou les étudiants peuvent retrouver tout ce dont ils ont besoin pour bien étudier — et aujourd’hui, ils sont plus d’1 500 000 à l’avoir essayé !
+          Papillon, c’est mon plus gros projet depuis toujours. En résumé, c’est une appli ou les étudiants peuvent retrouver tout ce dont ils ont besoin pour bien étudier — et aujourd’hui, ils sont plus d’1 850 000+ à l’avoir essayé !
         </p>
         <Button color="#29947A" leading={<PapillonIcon />} href="https://papillon.bzh" target="_blank">Voir papillon.bzh</Button>
       </div>
